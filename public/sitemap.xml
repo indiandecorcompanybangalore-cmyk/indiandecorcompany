@@ -170,6 +170,12 @@
 
   <!-- Local Bangalore Micro-Markets -->
   <url>
+    <loc>https://indiandecorcompany.in/locations/nagavara/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://indiandecorcompany.in/locations/whitefield/</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>

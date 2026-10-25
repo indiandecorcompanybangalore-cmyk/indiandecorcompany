@@ -14,7 +14,7 @@ export const LocationsPage = () => {
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
         title="Interior Design Studios & Locations Bangalore | Indian Decor Company"
-        description="Explore Indian Decor Company's Bangalore submarket design studios and turnkey coverage across Whitefield, Indiranagar, HSR Layout, and Koramangala."
+        description="Explore Indian Decor Company's Bangalore submarket design studios and turnkey coverage across Nagavara, Manyata Tech Park, Hebbal, Whitefield, Indiranagar, and Koramangala."
         canonical="https://indiandecorcompany.in/locations/"
       />
       <SchemaJsonLd
@@ -102,7 +102,7 @@ export const LocationsPage = () => {
               margin: '0 auto 28px'
             }}
           >
-            From high-ceiling luxury villas in Whitefield to boutique penthouses in Indiranagar, explore our localized architectural and turnkey interior solutions tailored to Bangalore's premier communities.
+            From our headquarters in Nagavara near Manyata Tech Park to luxury villas in Whitefield and Indiranagar, explore our localized architectural and turnkey interior solutions tailored to Bangalore's premier communities.
           </p>
 
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>

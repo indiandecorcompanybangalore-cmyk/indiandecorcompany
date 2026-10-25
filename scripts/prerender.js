@@ -58,6 +58,7 @@ routes.push({
       <section>
         <h2>Bangalore Prime Submarket Studios</h2>
         <ul>
+          <li><a href="/locations/nagavara/">Turnkey Interior Designers in Nagavara & Manyata</a></li>
           <li><a href="/locations/whitefield/">Luxury Villa Interiors in Whitefield</a></li>
           <li><a href="/locations/indiranagar/">Boutique & Heritage Residences in Indiranagar</a></li>
           <li><a href="/locations/hsr-layout/">Contemporary Apartments & Showrooms in HSR Layout</a></li>
@@ -249,7 +250,7 @@ routes.push({
   path: '/locations',
   canonical: 'https://indiandecorcompany.in/locations/',
   title: 'Interior Design Studios & Locations Bangalore | Indian Decor Company',
-  description: "Explore Indian Decor Company's Bangalore submarket design studios and turnkey coverage across Whitefield, Indiranagar, HSR Layout, and Koramangala.",
+  description: "Explore Indian Decor Company's Bangalore submarket design studios and turnkey coverage across Nagavara, Manyata Tech Park, Hebbal, Whitefield, Indiranagar, and Koramangala.",
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Bangalore Interior Design Studios & Prime Neighborhoods',
   schemas: [makeCoreBreadcrumb('Locations', 'locations')],

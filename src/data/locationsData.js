@@ -1,5 +1,36 @@
 export const bangaloreLocations = [
   {
+    id: "nagavara",
+    slug: "nagavara",
+    name: "Nagavara, Bangalore",
+    headline: "Turnkey Interior Designers in Nagavara, Manyata & Hebbal",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
+    description: "Located at our headquarters in North Bangalore, IDC delivers turnkey residential and commercial interiors across Nagavara, Manyata Tech Park, Hebbal, and Thanisandra Main Road.",
+    communitiesServed: [
+      "Manyata Embassy Business Park & Tech Residences",
+      "Karle Zenith Residences, Nagavara",
+      "Godrej Platinum & Godrej Woodsman Estate, Hebbal",
+      "Sobha City & Mantri Lithos, Thanisandra",
+      "Bhartiya City Nikoo Homes Corridor"
+    ],
+    highlightProjectSlug: "corporate-office-manyata-tech-park",
+    localExpertise: "With direct proximity to Manyata Tech Park and key North Bangalore residential corridors, we specialize in high-efficiency hybrid home offices, contemporary 2BHK/3BHK apartment woodwork, and turnkey corporate interior fitouts with direct factory fabrication.",
+    faqs: [
+      {
+        question: "Where is Indian Decor Company located in Nagavara?",
+        answer: "Our registered Bangalore base is at 111, Nagavara, Bengaluru 560024, placing us within minutes of Manyata Embassy Business Park, Hebbal Flyover, and Thanisandra."
+      },
+      {
+        question: "What interior design services do you provide in Nagavara and Hebbal?",
+        answer: "We provide complete turnkey residential interiors (modular kitchens, master wardrobes, false ceiling, lighting), corporate workspace fitouts for tech firms, and custom furniture manufacturing."
+      },
+      {
+        question: "Can I visit your facility or review completed projects near Manyata?",
+        answer: "Yes, we have executed corporate offices right in Manyata Tech Park and residential interiors in North Bangalore. Consultations and site walkthroughs can be scheduled directly with our design team."
+      }
+    ]
+  },
+  {
     id: "whitefield",
     slug: "whitefield",
     name: "Whitefield, Bangalore",
