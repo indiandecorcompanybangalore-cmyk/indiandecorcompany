@@ -14,10 +14,10 @@ export const SchemaJsonLd = ({ type, data }) => {
       "description": "Premium interior design, turnkey execution, and custom furniture manufacturing company based in Bangalore, Karnataka, India.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "IDC Design Pavilion, 100 Feet Road",
-        "addressLocality": "Bangalore",
+        "streetAddress": "111, Nagavara",
+        "addressLocality": "Bengaluru",
         "addressRegion": "Karnataka",
-        "postalCode": "560038",
+        "postalCode": "560024",
         "addressCountry": "IN"
       },
       "contactPoint": {
@@ -44,16 +44,11 @@ export const SchemaJsonLd = ({ type, data }) => {
       "url": "https://indiandecorcompany.in",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "IDC Design Pavilion, 100 Feet Road",
-        "addressLocality": "Bangalore",
+        "streetAddress": "111, Nagavara",
+        "addressLocality": "Bengaluru",
         "addressRegion": "Karnataka",
-        "postalCode": "560038",
+        "postalCode": "560024",
         "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 12.9716,
-        "longitude": 77.5946
       },
       "openingHoursSpecification": [
         {
@@ -79,10 +74,10 @@ export const SchemaJsonLd = ({ type, data }) => {
         "url": "https://indiandecorcompany.in",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "IDC Design Pavilion, 100 Feet Road",
-          "addressLocality": "Bangalore",
+          "streetAddress": "111, Nagavara",
+          "addressLocality": "Bengaluru",
           "addressRegion": "Karnataka",
-          "postalCode": "560038",
+          "postalCode": "560024",
           "addressCountry": "IN"
         }
       },

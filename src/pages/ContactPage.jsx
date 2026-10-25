@@ -197,7 +197,7 @@ export const ContactPage = () => {
                   FLAGSHIP STUDIO & ATELIER
                 </span>
                 <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.9rem', color: '#111827', marginBottom: '12px', fontWeight: 600 }}>
-                  IDC Design Pavilion & Workshop
+                  IDC Design Studio & Workshop
                 </h2>
                 <p style={{ fontSize: '0.92rem', color: '#6B7280', lineHeight: 1.65 }}>
                   Meet our senior interior architects, touch 200+ Italian marble and veneer samples, inspect German modular joinery, and review interactive 3D floorplans at our Bangalore studio.
@@ -228,11 +228,11 @@ export const ContactPage = () => {
                       Studio Location
                     </h4>
                     <p style={{ fontSize: '0.86rem', color: '#4B5563', lineHeight: 1.5, marginBottom: '6px' }}>
-                      Bangalore, Karnataka, India<br />
+                      111, Nagavara, Bengaluru, Karnataka 560024<br />
                       Dedicated design center & modern manufacturing atelier.
                     </p>
                     <a
-                      href="https://www.google.com/maps/dir/?api=1&destination=Indian+Decor+Company+Bangalore"
+                      href="https://www.google.com/maps/dir/?api=1&destination=111%2C+Nagavara%2C+Bengaluru%2C+Karnataka+560024"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
@@ -778,7 +778,7 @@ export const ContactPage = () => {
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=Indian+Decor+Company+Bangalore"
+                href="https://www.google.com/maps/dir/?api=1&destination=111%2C+Nagavara%2C+Bengaluru%2C+Karnataka+560024"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

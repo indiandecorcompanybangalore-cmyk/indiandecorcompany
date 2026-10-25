@@ -374,9 +374,9 @@ export const Footer = () => {
                 fontWeight: 400
               }}
             >
-              Indian Decor Company Design Pavilion & Atelier, Bangalore, Karnataka, India.{' '}
+              Indian Decor Company, 111, Nagavara, Bengaluru, Karnataka 560024.{' '}
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=Indian+Decor+Company+Bangalore"
+                href="https://www.google.com/maps/dir/?api=1&destination=111%2C+Nagavara%2C+Bengaluru%2C+Karnataka+560024"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

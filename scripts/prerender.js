@@ -240,7 +240,7 @@ routes.push({
       <h1>Contact Indian Decor Company Bangalore</h1>
       <p>Schedule an interior consultation or visit our design studio and furniture workshop in Bangalore.</p>
       <p><strong>Phone:</strong> +91-80505-51406 | <strong>Email:</strong> info@indiandecorcompany.in</p>
-      <p><strong>Address:</strong> IDC Design Pavilion, 100 Feet Road, Bangalore, Karnataka 560038</p>
+      <p><strong>Address:</strong> 111, Nagavara, Bengaluru, Karnataka 560024</p>
     </header>
   `
 });
@@ -298,10 +298,10 @@ for (const service of servicesData) {
       "url": "https://indiandecorcompany.in",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "IDC Design Pavilion, 100 Feet Road",
-        "addressLocality": "Bangalore",
+        "streetAddress": "111, Nagavara",
+        "addressLocality": "Bengaluru",
         "addressRegion": "Karnataka",
-        "postalCode": "560038",
+        "postalCode": "560024",
         "addressCountry": "IN"
       }
     },
