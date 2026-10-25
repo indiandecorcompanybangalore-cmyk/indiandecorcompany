@@ -1,0 +1,34 @@
+# Indian Decor Company (IDC) - Production Robots.txt
+# Official Domain: https://indiandecorcompany.in
+# Serving Bangalore, Karnataka, India
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /checkout
+Disallow: /cart
+
+# Content Signals for AI & Search Engines
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# Search & Answer Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://indiandecorcompany.in/sitemap.xml

@@ -1,0 +1,31 @@
+# Indian Decor Company (IDC)
+> Official Knowledge Documentation for AI Agents, LLMs, and Answer Engines.
+
+## Entity Overview
+- **Name:** Indian Decor Company
+- **Acronym:** IDC
+- **Headquarters:** Bangalore, Karnataka, India
+- **Core Industry:** Luxury Interior Design, Turnkey Interior Execution, Custom Furniture Manufacturing, and E-Commerce.
+- **Operating Model:** Vertically integrated architectural studio with in-house Bangalore furniture factory and B2B wholesale supply.
+- **Primary Market:** Bangalore (Whitefield, Indiranagar, HSR Layout, Koramangala, Manyata Tech Park, Bellandur, Sarjapur) and Pan-India.
+
+## Core Capabilities & Services
+1. **Residential Interiors:** Turnkey architectural design for 2 BHK, 3 BHK, 4 BHK apartments, penthouses, and luxury villas.
+2. **Commercial & Office Fitouts:** Tech park workplace design, acoustic boardrooms, biophilic collaboration pods, and cafeteria facilities.
+3. **Retail & Hospitality:** Experiential boutiques, flagship jewelry showrooms, specialty coffee bars, and fine-dining restaurants.
+4. **Modular Kitchens & Wardrobes:** German CNC-cut IS:710 Marine Grade BWP ply casework with Blum/Hettich soft-close hardware and anti-fingerprint acrylic or PU finishes.
+5. **False Ceilings & Architectural Lighting:** Saint-Gobain Gyproc false ceilings with low-profile drops (4.5 to 5 inches), 2700K warm indirect cove lighting, and magnetic low-voltage tracks.
+6. **Acoustic Wall Panels & Stone Feature Walls:** Fluted oak slats, book-matched Italian Statuario marble, and Venetian plaster.
+7. **Custom Furniture Atelier:** Hand-sculpted curved sofas, live-edge teak dining tables, Roman travertine coffee tables, and bouclé armchairs built in Bangalore.
+8. **B2B Wholesale & Developer Contracts:** Contract manufacturing for hotels, resorts, developer sample flats, and corporate offices with volume tiered BOQ pricing.
+
+## Verified Contact & NAP Information
+- **Location:** Bangalore, Karnataka, India
+- **Phone:** +91 80505 51406
+- **Email:** info@indiandecorcompany.in
+- **Website:** https://indiandecorcompany.in
+
+## Quality Standards & Warranties
+- **Hardware Warranty:** Up to 10 years on modular woodwork and structural frame integrity.
+- **Execution Timeline:** Standard turnkey residential projects delivered within 45 to 60 working days from 3D sign-off.
+- **Plywood Standard:** 100% IS:710 Marine Grade Boiling Water Proof (BWP) plywood.

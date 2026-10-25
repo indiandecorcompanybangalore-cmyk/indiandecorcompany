@@ -1,0 +1,13 @@
+# 301 Permanent Redirects: Domain & Protocol Consolidation
+https://www.indiandecorcompany.in/*  https://indiandecorcompany.in/:splat  301!
+http://www.indiandecorcompany.in/*   https://indiandecorcompany.in/:splat  301!
+http://indiandecorcompany.in/*       https://indiandecorcompany.in/:splat  301!
+
+# Legacy & Alternate Slugs 301 Redirects
+/projects/minimalist-luxury-penthouse-indiranagar-bangalore  https://indiandecorcompany.in/projects/penthouse-interior-indiranagar-bangalore/ 301!
+/projects/artisanal-bistro-lounge-koramangala-bangalore      https://indiandecorcompany.in/projects/boutique-cafe-koramangala-bangalore/ 301!
+/projects/executive-3-bhk-residence-sarjapur-bangalore       https://indiandecorcompany.in/projects/executive-residence-bellandur-bangalore/ 301!
+/shop/dining-furniture/round-coffee-table                   https://indiandecorcompany.in/shop/sofas-seating/round-coffee-table/ 301!
+
+# Cloudflare Pages SPA Client-Side Routing Fallback
+/*    /index.html   200
