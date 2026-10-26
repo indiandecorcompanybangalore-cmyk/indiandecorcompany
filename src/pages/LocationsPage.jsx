@@ -13,8 +13,8 @@ export const LocationsPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="Interior Design Studios & Locations Bangalore | Indian Decor Company"
-        description="Explore Indian Decor Company's Bangalore submarket design studios and turnkey coverage across Nagavara, Manyata Tech Park, Hebbal, Whitefield, Indiranagar, and Koramangala."
+        title="Bangalore Interior Design Service Areas | Indian Decor Company"
+        description="Explore Indian Decor Company's Bangalore interior design service areas. Project fit and site availability are confirmed individually; listed areas are not separate studio addresses."
         canonical="https://indiandecorcompany.in/locations/"
       />
       <SchemaJsonLd
@@ -41,7 +41,7 @@ export const LocationsPage = () => {
       >
         <img
           src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85"
-          alt="IDC Bangalore Submarket Interior Design Studios"
+          alt="Interior design service areas across Bangalore"
           style={{
             position: 'absolute',
             inset: 0,
@@ -77,7 +77,7 @@ export const LocationsPage = () => {
             }}
           >
             <MapPin size={14} />
-            <span>Bangalore Submarket Coverage</span>
+            <span>Bangalore Service Areas</span>
           </div>
 
           <h1
@@ -90,7 +90,7 @@ export const LocationsPage = () => {
               marginBottom: '18px'
             }}
           >
-            Bangalore Interior Design Studios & Prime Neighborhoods
+            Bangalore Interior Design Service Areas
           </h1>
 
           <p
@@ -102,7 +102,7 @@ export const LocationsPage = () => {
               margin: '0 auto 28px'
             }}
           >
-            From our headquarters in Nagavara near Manyata Tech Park to luxury villas in Whitefield and Indiranagar, explore our localized architectural and turnkey interior solutions tailored to Bangalore's premier communities.
+            Explore the Bangalore areas where IDC accepts interior design enquiries. Each property, project scope, and site-visit request is reviewed individually; these area pages do not represent separate IDC offices.
           </p>
 
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -141,7 +141,7 @@ export const LocationsPage = () => {
                 marginBottom: '10px'
               }}
             >
-              Hyper-Local Architectural Expertise
+              Local Project Planning
             </span>
             <h2
               style={{
@@ -151,7 +151,7 @@ export const LocationsPage = () => {
                 lineHeight: 1.2
               }}
             >
-              Tailored Interior Solutions Across Bangalore
+              Interior Design Enquiries Across Bangalore
             </h2>
           </div>
 
@@ -223,10 +223,10 @@ export const LocationsPage = () => {
 
                   <div style={{ marginTop: 'auto', paddingTop: '16px', borderTop: '1px solid #F3F4F6' }}>
                     <div style={{ fontSize: '0.78rem', fontWeight: 600, color: '#6B7280', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
-                      Key Communities Served:
+                      Area-specific planning notes:
                     </div>
                     <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px 0' }}>
-                      {(loc.communitiesServed || []).slice(0, 3).map((comm, idx) => (
+                      {(loc.localConsiderations || loc.communitiesServed || []).slice(0, 3).map((comm, idx) => (
                         <li key={idx} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.85rem', color: '#374151', marginBottom: '4px' }}>
                           <CheckCircle2 size={13} color="var(--color-gold-dark, #B8860B)" />
                           <span>{comm}</span>
@@ -252,7 +252,7 @@ export const LocationsPage = () => {
                         transition: 'background-color 0.2s ease'
                       }}
                     >
-                      <span>Explore {loc.name.split(',')[0]} Studio</span>
+                      <span>Explore {loc.name.split(',')[0]} service area</span>
                       <ArrowRight size={16} color="var(--color-gold-dark, #B8860B)" />
                     </Link>
                   </div>

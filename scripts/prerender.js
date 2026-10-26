@@ -56,13 +56,9 @@ routes.push({
         </ul>
       </section>
       <section>
-        <h2>Bangalore Prime Submarket Studios</h2>
+        <h2>Bangalore Interior Design Service Areas</h2>
         <ul>
-          <li><a href="/locations/nagavara/">Turnkey Interior Designers in Nagavara & Manyata</a></li>
-          <li><a href="/locations/whitefield/">Luxury Villa Interiors in Whitefield</a></li>
-          <li><a href="/locations/indiranagar/">Boutique & Heritage Residences in Indiranagar</a></li>
-          <li><a href="/locations/hsr-layout/">Contemporary Apartments & Showrooms in HSR Layout</a></li>
-          <li><a href="/locations/koramangala/">Hospitality & Penthouse Interiors in Koramangala</a></li>
+          ${bangaloreLocations.map(loc => `<li><a href="/locations/${loc.slug}/">Interior design service coverage in ${loc.name}</a></li>`).join('')}
         </ul>
       </section>
     </main>
@@ -249,15 +245,15 @@ routes.push({
 routes.push({
   path: '/locations',
   canonical: 'https://indiandecorcompany.in/locations/',
-  title: 'Interior Design Studios & Locations Bangalore | Indian Decor Company',
-  description: "Explore Indian Decor Company's Bangalore submarket design studios and turnkey coverage across Nagavara, Manyata Tech Park, Hebbal, Whitefield, Indiranagar, and Koramangala.",
+  title: 'Bangalore Interior Design Service Areas | Indian Decor Company',
+  description: "Explore Indian Decor Company's Bangalore interior design service areas. Project fit and site availability are confirmed individually; listed areas are not separate studio addresses.",
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
-  h1: 'Bangalore Interior Design Studios & Prime Neighborhoods',
+  h1: 'Bangalore Interior Design Service Areas',
   schemas: [makeCoreBreadcrumb('Locations', 'locations')],
   html: `
     <header>
-      <h1>Bangalore Interior Design Studios & Prime Neighborhoods</h1>
-      <p>Explore IDC's localized architectural and turnkey interior solutions tailored to Bangalore's premier communities.</p>
+      <h1>Bangalore Interior Design Service Areas</h1>
+      <p>Explore the Bangalore areas where IDC accepts interior design enquiries. Each property and project is reviewed individually; these pages do not represent separate IDC offices.</p>
     </header>
     <main>
       <h2>Bangalore Prime Submarket Coverage</h2>
@@ -424,21 +420,6 @@ for (const project of projectsData) {
 
 // 4. 4 Location Detail Pages
 for (const loc of bangaloreLocations) {
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": `Indian Decor Company (IDC) - ${loc.name}`,
-    "url": `https://indiandecorcompany.in/locations/${loc.slug}`,
-    "telephone": "+91-80505-51406",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": loc.name.split(',')[0].trim(),
-      "addressRegion": "Karnataka",
-      "addressCountry": "IN"
-    },
-    "description": loc.description
-  };
-
   const breadcrumbsSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -452,11 +433,22 @@ for (const loc of bangaloreLocations) {
   routes.push({
     path: `/locations/${loc.slug}`,
     canonical: `https://indiandecorcompany.in/locations/${loc.slug}/`,
-    title: `Interior Designers in ${loc.name} | Luxury Home & Villa Interiors | IDC`,
+    title: `${loc.headline} | Indian Decor Company`,
     description: loc.description,
     image: loc.heroImage,
     h1: loc.headline,
-    schemas: [localBusinessSchema, breadcrumbsSchema],
+    schemas: [
+      breadcrumbsSchema,
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": (loc.faqs || []).map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      }
+    ],
     html: `
       <header>
         <nav aria-label="Breadcrumb">
@@ -467,10 +459,9 @@ for (const loc of bangaloreLocations) {
       </header>
       <main>
         <section>
-          <h2>Key Gated Communities & Landmarks Served in ${loc.name}</h2>
-          <ul>
-            ${(loc.communitiesServed || []).map(c => `<li>${c}</li>`).join('')}
-          </ul>
+          <h2>Planning an interior project in ${loc.name}</h2>
+          <p>Service coverage does not mean IDC has a studio or branch in this neighbourhood. Project fit, property access, and site-visit availability are confirmed individually.</p>
+          ${loc.localConsiderations?.length ? `<ul>${loc.localConsiderations.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
         </section>
         <section>
           <h2>Local Architecture & Design Specialization</h2>
@@ -482,7 +473,7 @@ for (const loc of bangaloreLocations) {
             ${(loc.faqs || []).map(faq => `<dt><h3>${faq.question}</h3></dt><dd><p>${faq.answer}</p></dd>`).join('')}
           </dl>
         </section>
-        <p><a href="/contact/">Schedule a consultation in ${loc.name} &rarr;</a></p>
+        <p><a href="/contact/">Ask IDC to confirm project fit and availability for ${loc.name} &rarr;</a></p>
       </main>
     `
   });

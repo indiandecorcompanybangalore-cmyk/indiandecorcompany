@@ -200,6 +200,55 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://indiandecorcompany.in/locations/yelahanka/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/hebbal/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/sarjapur-road/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/bellandur/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/electronic-city/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/jayanagar/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/jp-nagar/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/locations/marathahalli/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
   <!-- Shop Category Hubs -->
   <url>
     <loc>https://indiandecorcompany.in/shop/sofas-seating/</loc>

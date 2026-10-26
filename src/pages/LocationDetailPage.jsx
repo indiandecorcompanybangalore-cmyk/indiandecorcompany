@@ -12,7 +12,7 @@ export const LocationDetailPage = () => {
   const { openConsultation } = useLead();
 
   const location = bangaloreLocations.find(l => l.slug === slug) || bangaloreLocations[0];
-  const highlightProject = projectsData.find(p => p.slug === location.highlightProjectSlug) || projectsData[0];
+  const highlightProject = location.highlightProjectSlug ? projectsData.find(p => p.slug === location.highlightProjectSlug) : null;
 
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
@@ -22,7 +22,6 @@ export const LocationDetailPage = () => {
         canonical={`https://indiandecorcompany.in/locations/${location.slug}/`}
         ogImage={location.heroImage}
       />
-      <SchemaJsonLd type="LocalBusiness" />
       <SchemaJsonLd type="FAQPage" data={{ faqs: location.faqs }} />
       <SchemaJsonLd
         type="BreadcrumbList"
@@ -43,7 +42,7 @@ export const LocationDetailPage = () => {
         <div className="container-custom" style={{ position: 'absolute', bottom: '48px', left: 0, right: 0, zIndex: 2 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--color-gold)', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '8px' }}>
             <MapPin size={14} />
-            <span>BANGALORE SUBMARKET SPECIALIZATION</span>
+            <span>BANGALORE SERVICE AREA</span>
           </div>
           <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(2.2rem, 4.4vw, 3.6rem)', fontWeight: 600, color: '#FFFFFF', lineHeight: 1.15, marginBottom: '14px', textShadow: '0 2px 20px rgba(0, 0, 0, 0.6)' }}>
             {location.headline}
@@ -98,13 +97,13 @@ export const LocationDetailPage = () => {
               {/* Communities Served */}
               <div style={{ marginBottom: '48px' }}>
                 <span style={{ fontSize: '0.72rem', color: 'var(--color-gold)', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 700 }}>
-                  PREMIUM ENCLAVES
+                  LOCAL PROJECT PLANNING
                 </span>
                 <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', color: '#111827', margin: '6px 0 18px 0', fontWeight: 600 }}>
-                  Key Residential & Tech Communities Handled
+                  Practical Considerations for Your Property
                 </h3>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '14px' }}>
-                  {location.communitiesServed.map((comm, idx) => (
+                  {(location.localConsiderations || location.communitiesServed || []).map((comm, idx) => (
                     <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', backgroundColor: '#F9FAFB', padding: '14px 18px', borderRadius: '10px', border: '1px solid #E5E7EB' }}>
                       <Building size={18} color="var(--color-gold)" style={{ flexShrink: 0 }} />
                       <span style={{ fontSize: '0.88rem', color: '#1F2937', fontWeight: 500 }}>{comm}</span>
@@ -117,10 +116,10 @@ export const LocationDetailPage = () => {
               {highlightProject && (
                 <div style={{ marginBottom: '48px' }}>
                   <span style={{ fontSize: '0.72rem', color: 'var(--color-gold)', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 700 }}>
-                    LOCAL EXECUTION PROOF
+                    RELATED PROJECT
                   </span>
                   <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', color: '#111827', margin: '6px 0 18px 0', fontWeight: 600 }}>
-                    Featured Project in {location.name}
+                    Related IDC Project
                   </h3>
                   <Link
                     to={`/projects/${highlightProject.slug}`}
@@ -189,10 +188,10 @@ export const LocationDetailPage = () => {
                   {location.name.toUpperCase()} INTERIORS
                 </span>
                 <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.65rem', color: '#111827', margin: '8px 0 14px 0', fontWeight: 600 }}>
-                  Schedule a Site Visit in {location.name.split(',')[0]}
+                  Discuss Your Project in {location.name.split(',')[0]}
                 </h3>
                 <p style={{ fontSize: '0.86rem', color: '#6B7280', lineHeight: 1.55, marginBottom: '24px' }}>
-                  Our Bangalore project managers conduct on-site laser measurements and property audits across all gated villa enclaves and apartments in {location.name.split(',')[0]}.
+                  Share your property details and project brief. IDC will confirm whether the requested scope and an on-site assessment are available for your location.
                 </p>
 
                 <button
@@ -200,7 +199,7 @@ export const LocationDetailPage = () => {
                   className="btn-gold"
                   style={{ width: '100%', marginBottom: '12px', padding: '13px' }}
                 >
-                  Book Free Site Visit
+                  Request a Consultation
                 </button>
 
                 <a
@@ -224,7 +223,7 @@ export const LocationDetailPage = () => {
                   }}
                 >
                   <Phone size={15} color="#25D366" />
-                  <span>WhatsApp {location.name.split(',')[0]} Desk</span>
+                  <span>WhatsApp IDC</span>
                 </a>
               </div>
             </div>
@@ -251,7 +250,7 @@ export const LocationDetailPage = () => {
             Ready to Begin Your Interior Journey?
           </h2>
           <p style={{ fontSize: '0.96rem', color: '#9CA3AF', lineHeight: 1.65, marginBottom: '28px' }}>
-            Book a dedicated consultation session with our design directors. We review your floorplans and provide tailored estimates for your property in {location.name.split(',')[0]}.
+            Share your floor plan, requirements, and timeline. IDC will confirm project fit, consultation options, and the information needed for an estimate.
           </p>
           <button
             onClick={() => openConsultation(`CTA for ${location.name}`)}
