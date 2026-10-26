@@ -8,6 +8,7 @@ import { projectsData } from '../src/data/projectsData.js';
 import { bangaloreLocations } from '../src/data/locationsData.js';
 import { productCategories, shopProductsData } from '../src/data/productsData.js';
 import { blogArticles } from '../src/data/blogData.js';
+import { parseArticleContent } from '../src/utils/articleContent.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,7 +36,7 @@ const routes = [];
 routes.push({
   path: '/',
   canonical: 'https://indiandecorcompany.in/',
-  title: 'Best Interior Designers in Bangalore? | Indian Decor Company',
+  title: 'Interior Designers in Bangalore | Indian Decor Company',
   description: 'Compare interior design services in Bangalore for homes, offices, and commercial spaces. Explore Indian Decor Company’s design, turnkey, and custom furniture work.',
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Interior Designers in Bangalore for Homes & Workspaces',
@@ -610,10 +611,10 @@ for (const article of blogArticles) {
     "headline": article.title,
     "description": article.subtitle,
     "image": article.image,
-    "datePublished": pubDate,
-    "dateModified": "2026-10-18",
+    "datePublished": new Date(pubDate).toISOString().slice(0, 10),
+    "dateModified": article.dateModified || "2026-10-18",
     "author": {
-      "@type": "Person",
+      "@type": authorName === "Indian Decor Company Editorial Team" ? "Organization" : "Person",
       "name": authorName
     },
     "publisher": {
@@ -640,9 +641,21 @@ for (const article of blogArticles) {
     ]
   };
 
-  const contentParagraphs = typeof article.content === 'string'
-    ? article.content.split('\n\n').map(p => p.trim()).filter(Boolean)
-    : [];
+  const contentBlocks = parseArticleContent(article.content);
+  const contentHtml = contentBlocks.map((block) => {
+    const safeText = block.text?.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') || '';
+    const formattedText = safeText.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    if (block.type === 'heading') return `<h${block.level}>${formattedText}</h${block.level}>`;
+    if (block.type === 'list') {
+      const items = block.items.map((item) => {
+        const safeItem = item.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        return `<li>${safeItem}</li>`;
+      }).join('');
+      return `<ul>${items}</ul>`;
+    }
+    return `<p>${formattedText}</p>`;
+  }).join('\n');
+  const relatedService = servicesData.find((service) => service.slug === article.relatedServiceSlug);
 
   routes.push({
     path: `/blog/${article.slug}`,
@@ -663,8 +676,7 @@ for (const article of blogArticles) {
       </header>
       <main>
         <section>
-          <h2>Overview & Architectural Analysis</h2>
-          ${contentParagraphs.map(p => `<p>${p}</p>`).join('')}
+          ${contentHtml}
         </section>
         ${article.faqs && article.faqs.length > 0 ? `
           <section>
@@ -674,6 +686,8 @@ for (const article of blogArticles) {
             </dl>
           </section>
         ` : ''}
+        ${relatedService ? `<aside><h2>Related interior design service</h2><p>${relatedService.shortDesc}</p><p><a href="/services/${relatedService.slug}/">Explore ${relatedService.title}</a></p></aside>` : ''}
+        <p><a href="/contact/">Discuss your project with Indian Decor Company</a></p>
         <p><a href="/blog/">&larr; Back to all design insights</a></p>
       </main>
     `

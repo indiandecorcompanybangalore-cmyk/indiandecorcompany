@@ -6,6 +6,7 @@ import { servicesData } from '../data/servicesData';
 import { productsData } from '../data/productsData';
 import { MetaTags } from '../components/seo/MetaTags';
 import { SchemaJsonLd } from '../components/seo/SchemaJsonLd';
+import { parseArticleContent } from '../utils/articleContent';
 
 export const BlogPostPage = () => {
   const { slug } = useParams();
@@ -156,7 +157,19 @@ export const BlogPostPage = () => {
             marginBottom: '52px'
           }}
         >
-          {article.content}
+          {parseArticleContent(article.content).map((block, index) => {
+            const renderInline = (text) => text.split(/(\*\*.+?\*\*)/g).map((part, partIndex) =>
+              part.startsWith('**') && part.endsWith('**')
+                ? <strong key={partIndex}>{part.slice(2, -2)}</strong>
+                : part
+            );
+            if (block.type === 'heading') {
+              const Heading = `h${block.level}`;
+              return <Heading key={index} style={{ margin: '1.5em 0 0.5em', color: '#111827', lineHeight: 1.3 }}>{renderInline(block.text)}</Heading>;
+            }
+            if (block.type === 'list') return <ul key={index} style={{ paddingLeft: '1.4em', margin: '0.5em 0 1em' }}>{block.items.map((item, itemIndex) => <li key={itemIndex} style={{ marginBottom: '0.45em' }}>{renderInline(item)}</li>)}</ul>;
+            return <p key={index} style={{ margin: '0 0 1em' }}>{renderInline(block.text)}</p>;
+          })}
         </div>
 
         {/* Connected Service Hub Box */}

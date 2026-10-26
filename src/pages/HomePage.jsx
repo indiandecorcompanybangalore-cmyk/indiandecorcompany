@@ -158,7 +158,7 @@ export const HomePage = () => {
       )}
 
       <MetaTags
-        title="Best Interior Designers in Bangalore? | Indian Decor Company"
+        title="Interior Designers in Bangalore | Indian Decor Company"
         description="Compare interior design services in Bangalore for homes, offices, and commercial spaces. Explore Indian Decor Company’s design, turnkey, and custom furniture work."
         canonical="https://indiandecorcompany.in/"
       />

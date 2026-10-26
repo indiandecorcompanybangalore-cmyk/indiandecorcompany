@@ -104,37 +104,56 @@ Boardrooms and breakout areas are adopting lounge-like warmth: soft leather chai
   {
     id: "interior-design-cost-bangalore-guide",
     slug: "interior-design-cost-in-bangalore-guide",
-    title: "Interior Design Cost in Bangalore (2026 Price Breakdown)",
-    subtitle: "Complete transparent cost guide for 1 BHK, 2 BHK, 3 BHK, and luxury villas with material rates and timelines.",
+    title: "Interior Design Cost in Bangalore: How to Plan Your Budget",
+    subtitle: "A practical checklist for comparing interior design quotes, defining scope, and planning a home-interiors budget in Bangalore.",
     category: "Guides & Budgeting",
     readTime: "8 min read",
     publishDate: "February 12, 2026",
     author: {
-      name: "Karan Verma",
-      role: "Technical Fitout Director, IDC",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+      name: "Indian Decor Company Editorial Team",
+      role: "Interior design planning",
+      avatar: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=200&q=80"
     },
     featured: false,
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85",
     content: `
-Planning the interior budget for a new Bangalore home can feel opaque. Here is IDC's verified, realistic 2026 cost framework based on 100+ turnkey handovers across Karnataka.
+Interior design quotes are only comparable when the scope is clear. Before setting a budget for a Bangalore home, list the rooms, work required, finish preferences, and items you will purchase separately. Treat any online range as an initial planning reference, not a project quote.
 
-### Cost Breakdown by Apartment Configuration
-- **2 BHK (900 - 1,200 sq.ft)**:
-  - Essential Modular (BWP kitchen, 2 wardrobes, basic TV unit): ₹4.5L - ₹7.5L
-  - Premium Turnkey (Ceilings, modular woodwork, painting, basic lighting): ₹8L - ₹12L
-- **3 BHK (1,400 - 2,200 sq.ft)**:
-  - Essential: ₹8L - ₹12L
-  - Luxury Turnkey (Acrylic kitchen, veneer accents, designer ceilings, custom sofa & dining): ₹14L - ₹24L
-- **4 BHK & Luxury Villas (3,000+ sq.ft)**:
-  - Complete Turnkey Bespoke: ₹25L to ₹60L+
-    `,
+### Start with the project scope
+For each room, note whether the work includes design and drawings, demolition or civil changes, electrical and plumbing work, ceiling and lighting, flooring, painting, modular cabinetry, loose furniture, appliances, delivery, installation, and cleanup. Ask each provider to mark every item as included, excluded, or optional.
+
+### Compare quotes line by line
+Request the same room list and finish level from each provider. Check board and hardware specifications, finish names, quantities, taxes, transport, installation, and the process for approving substitutions. A low headline price may omit work that appears elsewhere as an extra.
+
+### Plan an allowance for unknowns
+Existing wiring, plumbing, wall condition, building access, and measurement changes can affect the final scope. Ask how site-condition changes are documented and approved before extra work begins. Keep any contingency separate from the quoted contract amount rather than treating it as a guaranteed cost.
+
+### What to take into a consultation
+- A floor plan with dimensions, if available.
+- Photos of the existing rooms and building access route.
+- A room-by-room list of must-haves and items to retain.
+- Reference images with notes on what you like about each.
+- Appliance sizes, storage needs, and preferred materials.
+- Your target budget and the work you are willing to phase.
+
+### Materials and specification checks
+Ask for the exact product, grade, thickness, finish, hardware range, and warranty terms in writing. For claims such as marine plywood or a particular Indian Standard, request the product label and current supporting documentation; do not rely on a generic description alone. BIS publishes the current IS 710:2024 specification for marine plywood, so a product claim should be checked against the actual product and applicable standard.
+
+### A simple quote-comparison worksheet
+Create one row per room and compare: design fee, civil work, electrical/plumbing, ceiling, cabinetry, finishes, loose furniture, appliances, delivery, installation, taxes, exclusions, and payment milestones. Mark unclear items as questions instead of assuming they are included.
+
+The final cost depends on measured site conditions, selected products, project scope, and the provider's written quotation. Share your floor plan and room list with Indian Decor Company to discuss a project-specific estimate.`,
     relatedServiceSlug: "residential-interiors",
     relatedProductIds: ["oberoi-curved-sofa", "vogue-dining-chair", "travertine-coffee-table"],
+    dateModified: "2026-10-26",
     faqs: [
       {
-        question: "How much does a modular kitchen cost in Bangalore?",
-        answer: "A standard L-shaped or parallel modular kitchen in Bangalore costs ₹1.8L to ₹3.5L in acrylic/laminate on BWP plywood. Premium kitchens with PU finish and quartz counters range from ₹4L to ₹9L."
+        question: "How can I compare interior design quotes in Bangalore?",
+        answer: "Give each provider the same room list, drawings, finish preferences, and work scope. Compare inclusions, exclusions, material specifications, taxes, installation, timelines, and the written process for approving changes."
+      },
+      {
+        question: "Can an online interior design cost guide give me a final project price?",
+        answer: "No. A final estimate needs the measured site, agreed scope, material selections, and project requirements. Use online information for planning questions, then request an itemized written quotation."
       }
     ]
   }

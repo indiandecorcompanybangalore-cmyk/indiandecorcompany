@@ -134,9 +134,10 @@ export const SchemaJsonLd = ({ type, data }) => {
       "@type": "BlogPosting",
       "headline": data.title,
       "image": data.image,
-      "datePublished": data.publishDate,
+      "datePublished": data.publishDate ? new Date(data.publishDate).toISOString().slice(0, 10) : undefined,
+      ...(data.dateModified ? { "dateModified": data.dateModified } : {}),
       "author": {
-        "@type": "Person",
+        "@type": data.author?.name === "Indian Decor Company Editorial Team" ? "Organization" : "Person",
         "name": data.author?.name || "IDC Editorial Team"
       },
       "publisher": {
