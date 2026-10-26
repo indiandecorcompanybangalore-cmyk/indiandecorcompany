@@ -35,14 +35,14 @@ const routes = [];
 routes.push({
   path: '/',
   canonical: 'https://indiandecorcompany.in/',
-  title: 'Indian Decor Company (IDC) | Luxury Interiors & Custom Furniture Bangalore',
-  description: 'IDC is a premier Bangalore interior design and execution company specializing in luxury residential villas, commercial offices, modular kitchens, and custom handcrafted furniture.',
+  title: 'Best Interior Designers in Bangalore? | Indian Decor Company',
+  description: 'Compare interior design services in Bangalore for homes, offices, and commercial spaces. Explore Indian Decor Company’s design, turnkey, and custom furniture work.',
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
-  h1: 'Luxury Interior Designers & Custom Furniture in Bangalore',
+  h1: 'Interior Designers in Bangalore for Homes & Workspaces',
   html: `
     <header>
-      <h1>Luxury Interior Designers & Custom Furniture in Bangalore</h1>
-      <p>Indian Decor Company (IDC) creates timeless and functional spaces for residences, commercial campuses, modular kitchens, and bespoke furniture manufacturing across Bangalore, Karnataka.</p>
+      <h1>Interior Designers in Bangalore for Homes &amp; Workspaces</h1>
+      <p>Explore Indian Decor Company’s interior design services for homes, offices, and commercial spaces in Bangalore, including turnkey interiors, modular solutions, and custom furniture.</p>
     </header>
     <main>
       <section>

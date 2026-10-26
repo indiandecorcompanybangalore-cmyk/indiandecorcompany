@@ -158,8 +158,8 @@ export const HomePage = () => {
       )}
 
       <MetaTags
-        title="Indian Decor Company (IDC) | Luxury Interiors & Custom Furniture Bangalore"
-        description="IDC is a premier Bangalore interior design and execution company specializing in luxury residential villas, commercial offices, modular kitchens, and custom handcrafted furniture."
+        title="Best Interior Designers in Bangalore? | Indian Decor Company"
+        description="Compare interior design services in Bangalore for homes, offices, and commercial spaces. Explore Indian Decor Company’s design, turnkey, and custom furniture work."
         canonical="https://indiandecorcompany.in/"
       />
       <SchemaJsonLd type="Organization" />
@@ -245,10 +245,10 @@ export const HomePage = () => {
                 marginBottom: '24px'
               }}
             >
-              {heroSlides[currentHeroSlide].titleLine1} <br />
-              {heroSlides[currentHeroSlide].titleLine2} <br />
+              Interior Designers <br />
+              in Bangalore <br />
               <span style={{ fontStyle: 'italic', fontWeight: 400, color: 'var(--color-gold-light)' }}>
-                {heroSlides[currentHeroSlide].titleLine3}
+                for Homes &amp; Workspaces
               </span>
             </h1>
 
