@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, CheckCircle2, ShieldCheck, Sparkles, Calendar, Phone, ArrowRight } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, ShieldCheck, Sparkles, Calendar, Phone, ArrowRight, ChevronRight } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import { projectsData } from '../data/projectsData';
 import { useLead } from '../context/LeadContext';
@@ -32,8 +32,8 @@ export const ServiceDetailPage = () => {
         type="BreadcrumbList"
         data={[
           { name: "Home", url: "https://indiandecorcompany.in/" },
-          { name: "Services", url: "https://indiandecorcompany.in/services" },
-          { name: service.title, url: `https://indiandecorcompany.in/services/${service.slug}` }
+          { name: "Services", url: "https://indiandecorcompany.in/services/" },
+          { name: service.title, url: `https://indiandecorcompany.in/services/${service.slug}/` }
         ]}
       />
 
@@ -55,21 +55,49 @@ export const ServiceDetailPage = () => {
         />
 
         <div className="container-custom" style={{ position: 'absolute', bottom: '48px', left: 0, right: 0, zIndex: 2 }}>
-          <Link
-            to="/services"
+          <nav
+            aria-label="Breadcrumb"
             style={{
-              display: 'inline-flex',
+              display: 'flex',
+              flexWrap: 'wrap',
               alignItems: 'center',
-              gap: '6px',
+              gap: '8px',
               fontSize: '0.82rem',
-              color: 'var(--color-gold)',
-              textDecoration: 'none',
               marginBottom: '14px',
-              fontWeight: 600
+              fontWeight: 500
             }}
           >
-            <ArrowLeft size={14} /> Back to All Services
-          </Link>
+            <Link
+              to="/"
+              style={{
+                color: '#D1D5DB',
+                textDecoration: 'none',
+                transition: 'color 0.2s'
+              }}
+            >
+              Home
+            </Link>
+            <ChevronRight size={13} style={{ color: 'var(--color-gold)' }} />
+            <Link
+              to="/services"
+              style={{
+                color: '#D1D5DB',
+                textDecoration: 'none',
+                transition: 'color 0.2s'
+              }}
+            >
+              Services
+            </Link>
+            <ChevronRight size={13} style={{ color: 'var(--color-gold)' }} />
+            <span
+              style={{
+                color: 'var(--color-gold)',
+                fontWeight: 600
+              }}
+            >
+              {service.title}
+            </span>
+          </nav>
           <span style={{ display: 'block', fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.18em', color: 'var(--color-gold)', textTransform: 'uppercase', marginBottom: '8px' }}>
             IDC BANGALORE SERVICE SPECIALIZATION
           </span>

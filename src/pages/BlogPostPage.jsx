@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, Clock, Calendar, Briefcase, ShoppingBag } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronRight, Clock, Calendar, Briefcase, ShoppingBag } from 'lucide-react';
 import { blogArticles } from '../data/blogData';
 import { servicesData } from '../data/servicesData';
 import { productsData } from '../data/productsData';
@@ -30,28 +30,63 @@ export const BlogPostPage = () => {
         type="BreadcrumbList"
         data={[
           { name: "Home", url: "https://indiandecorcompany.in/" },
-          { name: "Blog", url: "https://indiandecorcompany.in/blog" },
-          { name: article.title, url: `https://indiandecorcompany.in/blog/${article.slug}` }
+          { name: "Blog", url: "https://indiandecorcompany.in/blog/" },
+          { name: article.title, url: `https://indiandecorcompany.in/blog/${article.slug}/` }
         ]}
       />
 
       {/* Header Container */}
       <div className="container-custom" style={{ maxWidth: '880px', margin: '0 auto', paddingTop: '20px' }}>
-        <Link
-          to="/blog"
+        <nav
+          aria-label="Breadcrumb"
           style={{
-            display: 'inline-flex',
+            display: 'flex',
+            flexWrap: 'wrap',
             alignItems: 'center',
-            gap: '6px',
+            gap: '8px',
             fontSize: '0.84rem',
-            color: '#6B7280',
-            textDecoration: 'none',
             marginBottom: '20px',
-            fontWeight: 500
+            color: '#6B7280'
           }}
         >
-          <ArrowLeft size={14} /> Back to All Insights
-        </Link>
+          <Link
+            to="/"
+            style={{
+              color: '#6B7280',
+              textDecoration: 'none',
+              fontWeight: 500,
+              transition: 'color 0.2s'
+            }}
+          >
+            Home
+          </Link>
+          <ChevronRight size={13} style={{ color: '#9CA3AF' }} />
+          <Link
+            to="/blog"
+            style={{
+              color: '#6B7280',
+              textDecoration: 'none',
+              fontWeight: 500,
+              transition: 'color 0.2s'
+            }}
+          >
+            Blog
+          </Link>
+          <ChevronRight size={13} style={{ color: '#9CA3AF' }} />
+          <span
+            style={{
+              color: '#111827',
+              fontWeight: 600,
+              maxWidth: '380px',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap'
+            }}
+            title={article.title}
+          >
+            {article.title}
+          </span>
+        </nav>
 
         <div>
           <span

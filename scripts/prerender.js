@@ -316,7 +316,7 @@ for (const service of servicesData) {
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indiandecorcompany.in/" },
       { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://indiandecorcompany.in/services/" },
-      { "@type": "ListItem", "position": 3, "name": service.title, "item": `https://indiandecorcompany.in/services/${service.slug}` }
+      { "@type": "ListItem", "position": 3, "name": service.title, "item": `https://indiandecorcompany.in/services/${service.slug}/` }
     ]
   };
 
