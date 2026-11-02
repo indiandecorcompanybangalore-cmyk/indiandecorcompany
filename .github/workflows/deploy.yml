@@ -1,0 +1,84 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    name: Build, Deploy & Verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and prerender static site
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=indiandecorcompany --branch=main
+
+      - name: Verify deployed homepage and services page
+        run: |
+          set -e
+
+          verify_route() {
+            local url="$1"
+            local expected_title="$2"
+            local max_attempts=8
+            local delay=5
+            local attempt=1
+
+            echo "🔍 Verifying $url ..."
+            while [ $attempt -le $max_attempts ]; do
+              local http_code
+              http_code=$(curl -s -L -o /tmp/route-response.html -w "%{http_code}" "$url" || echo "000")
+              
+              if [ "$http_code" = "200" ]; then
+                if grep -qi "$expected_title" /tmp/route-response.html; then
+                  echo "✅ [Attempt $attempt] $url returned HTTP 200 and matched '$expected_title'"
+                  return 0
+                else
+                  echo "⚠️ [Attempt $attempt] $url returned HTTP 200, waiting for updated content matching '$expected_title'..."
+                fi
+              else
+                echo "⚠️ [Attempt $attempt] $url returned HTTP $http_code. Retrying in ${delay}s..."
+              fi
+
+              sleep $delay
+              attempt=$((attempt + 1))
+            done
+
+            echo "❌ Verification failed for $url after $max_attempts attempts."
+            return 1
+          }
+
+          echo "=== Verifying Cloudflare Pages Deployment ==="
+          verify_route "https://indiandecorcompany.pages.dev/" "Interior Designers in Bangalore"
+          verify_route "https://indiandecorcompany.pages.dev/services/" "Interior Design & Turnkey Fitout Services in Bangalore"
+
+          echo "=== Verifying Custom Domain (indiandecorcompany.in) ==="
+          verify_route "https://indiandecorcompany.in/" "Interior Designers in Bangalore"
+          verify_route "https://indiandecorcompany.in/services/" "Interior Design & Turnkey Fitout Services in Bangalore"
+
+          echo "🎉 All deployed routes verified successfully!"
