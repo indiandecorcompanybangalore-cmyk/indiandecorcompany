@@ -22,7 +22,7 @@ export const ServiceDetailPage = () => {
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
         title={`${service.title} Bangalore | Cost & Turnkey Execution | IDC`}
-        description={service.overview}
+        description={service.shortDesc || service.overview}
         canonical={`https://indiandecorcompany.in/services/${service.slug}`}
         ogImage={service.heroImage}
       />

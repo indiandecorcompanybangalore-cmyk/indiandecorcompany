@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, Shield, Wrench, Sparkles, Building, Layers } from 'lucide-react';
 import { servicesData } from '../data/servicesData';
 import { useLead } from '../context/LeadContext';
@@ -7,15 +7,14 @@ import { MetaTags } from '../components/seo/MetaTags';
 import { SchemaJsonLd } from '../components/seo/SchemaJsonLd';
 
 export const ServicesPage = () => {
-  const navigate = useNavigate();
   const { openConsultation } = useLead();
 
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="Interior Design & Turnkey Services Bangalore | Indian Decor Company"
-        description="Explore IDC's full spectrum of interior design services: residential homes, luxury villas, commercial spaces, tech offices, modular kitchens, and custom furniture in Bangalore."
-        canonical="https://indiandecorcompany.in/services"
+        title="Interior Design & Turnkey Fitout Services in Bangalore | IDC"
+        description="Compare Bangalore interior design services for homes, offices and commercial spaces. Explore turnkey work, modular and custom furniture, projects and next steps."
+        canonical="https://indiandecorcompany.in/services/"
       />
       <SchemaJsonLd
         type="BreadcrumbList"
@@ -105,7 +104,7 @@ export const ServicesPage = () => {
             Luxury Interior Design & Execution Services in Bangalore
           </h1>
           <p style={{ fontSize: '1.02rem', color: '#D1D5DB', lineHeight: 1.7, maxWidth: '680px', margin: '0 auto' }}>
-            From conceptual architectural design to precision off-site factory fabrication and final turnkey handover, IDC orchestrates complete spatial excellence.
+            Compare residential, office and commercial interior design services in Bangalore, alongside turnkey execution, modular furniture and custom furniture options. Scope, materials, schedule and pricing are confirmed for each project.
           </p>
         </div>
       </section>
@@ -123,9 +122,9 @@ export const ServicesPage = () => {
             }}
           >
             {servicesData.map((service) => (
-              <div
+              <Link
                 key={service.id}
-                onClick={() => navigate(`/services/${service.slug}`)}
+                to={`/services/${service.slug}/`}
                 style={{
                   backgroundColor: '#FFFFFF',
                   borderRadius: '14px',
@@ -189,9 +188,21 @@ export const ServicesPage = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
+
+          <section style={{ marginTop: '64px', maxWidth: '900px' }}>
+            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', marginBottom: '14px' }}>Compare Services Against a Clear Project Scope</h2>
+            <p style={{ color: '#4B5563', lineHeight: 1.7, marginBottom: '14px' }}>
+              Before comparing proposals, prepare the same room list, drawings, finish preferences and requirements for each provider. Ask for design work, civil and electrical scope, furniture, materials, taxes, delivery, installation, exclusions and change approvals to be shown in writing. Final inclusions and pricing depend on the property, site conditions and selected specifications.
+            </p>
+            <p style={{ color: '#4B5563', lineHeight: 1.7, marginBottom: '14px' }}>
+              For home projects, use our <Link to="/blog/interior-design-cost-in-bangalore-guide/" style={{ color: '#8A6D42', fontWeight: 600 }}>Bangalore interior design cost guide</Link> to organize questions and compare estimates. You can also review <Link to="/projects/" style={{ color: '#8A6D42', fontWeight: 600 }}>project examples</Link> or <Link to="/contact/" style={{ color: '#8A6D42', fontWeight: 600 }}>contact IDC</Link> with your requirements.
+            </p>
+            <h3 style={{ fontSize: '1.1rem', margin: '22px 0 8px' }}>What should an interior design estimate include?</h3>
+            <p style={{ color: '#4B5563', lineHeight: 1.7 }}>Ask for a written room-by-room scope with materials, quantities, taxes, delivery, installation, exclusions and optional items clearly identified.</p>
+          </section>
 
           {/* Turnkey Assurance Banner */}
           <div

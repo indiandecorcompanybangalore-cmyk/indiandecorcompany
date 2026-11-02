@@ -3,7 +3,7 @@ export const servicesData = [
     id: "residential-interiors",
     slug: "residential-interiors",
     title: "Residential Interiors",
-    shortDesc: "Complete bespoke luxury home interiors for apartments, penthouses, and villas across Bangalore.",
+    shortDesc: "Explore residential interior design in Bangalore for apartments, villas and homes. Review design, storage and turnkey options, then discuss your project scope.",
     heroImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85",
     iconName: "Home",
     featured: true,

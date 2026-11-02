@@ -14,7 +14,7 @@ export const LocationsPage = () => {
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
         title="Bangalore Interior Design Service Areas | Indian Decor Company"
-        description="Explore Indian Decor Company's Bangalore interior design service areas. Project fit and site availability are confirmed individually; listed areas are not separate studio addresses."
+        description="Explore Bangalore interior design service areas. IDC confirms project fit and site availability individually; listed areas are not separate offices."
         canonical="https://indiandecorcompany.in/locations/"
       />
       <SchemaJsonLd

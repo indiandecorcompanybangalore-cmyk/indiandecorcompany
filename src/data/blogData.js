@@ -105,7 +105,7 @@ Boardrooms and breakout areas are adopting lounge-like warmth: soft leather chai
     id: "interior-design-cost-bangalore-guide",
     slug: "interior-design-cost-in-bangalore-guide",
     title: "Interior Design Cost in Bangalore: How to Plan Your Budget",
-    subtitle: "A practical checklist for comparing interior design quotes, defining scope, and planning a home-interiors budget in Bangalore.",
+    subtitle: "Plan a Bangalore home-interiors budget with a practical guide to comparing quotes, defining scope and checking what each estimate includes.",
     category: "Guides & Budgeting",
     readTime: "8 min read",
     publishDate: "February 12, 2026",

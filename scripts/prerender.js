@@ -37,7 +37,7 @@ routes.push({
   path: '/',
   canonical: 'https://indiandecorcompany.in/',
   title: 'Interior Designers in Bangalore | Indian Decor Company',
-  description: 'Compare interior design services in Bangalore for homes, offices, and commercial spaces. Explore Indian Decor Company’s design, turnkey, and custom furniture work.',
+  description: "Explore Indian Decor Company’s residential and commercial interior design services in Bangalore. View projects, compare service scopes and plan your budget.",
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Interior Designers in Bangalore for Homes & Workspaces',
   html: `
@@ -57,7 +57,30 @@ routes.push({
         </ul>
       </section>
       <section>
+        <h2>Explore Interior Projects</h2>
+        <p>Review the project examples and service details before deciding what to include in your brief. Project scope, materials, site conditions, and availability are confirmed for each enquiry.</p>
+        <ul>
+          ${projectsData.slice(0, 4).map(project => `<li><a href="/projects/${project.slug}/">${project.title}</a> — ${project.location}</li>`).join('')}
+        </ul>
+        <p><a href="/projects/">Browse all interior projects</a></p>
+      </section>
+      <section>
+        <h2>Plan Your Interior Design Scope and Budget</h2>
+        <p>List the rooms, work required, preferred finishes, and items you plan to buy separately. Compare estimates against the same written scope, including inclusions, exclusions, materials, installation, and taxes. Final pricing depends on measured site conditions and selected specifications.</p>
+        <p><a href="/blog/interior-design-cost-in-bangalore-guide/">Read the Bangalore interior design cost guide</a> or <a href="/contact/">discuss your project with IDC</a>.</p>
+      </section>
+      <section>
+        <h2>What to Prepare Before a Consultation</h2>
+        <ul>
+          <li>A floor plan or room measurements, if available.</li>
+          <li>Photos of the existing space and building access details.</li>
+          <li>A room-by-room list of priorities, storage needs, and items to retain.</li>
+          <li>Reference images, preferred materials, and a target budget.</li>
+        </ul>
+      </section>
+      <section>
         <h2>Bangalore Interior Design Service Areas</h2>
+        <p>IDC reviews each property and project enquiry individually. Listed areas are service locations, not separate studio addresses.</p>
         <ul>
           ${bangaloreLocations.map(loc => `<li><a href="/locations/${loc.slug}/">Interior design service coverage in ${loc.name}</a></li>`).join('')}
         </ul>
@@ -93,7 +116,7 @@ routes.push({
   path: '/services',
   canonical: 'https://indiandecorcompany.in/services/',
   title: 'Interior Design & Turnkey Fitout Services in Bangalore | IDC',
-  description: "Explore IDC's full spectrum of interior design services in Bangalore: luxury residential interiors, turnkey corporate offices, modular kitchens, and custom furniture manufacturing.",
+  description: "Compare Bangalore interior design services for homes, offices and commercial spaces. Explore turnkey work, modular and custom furniture, projects and next steps.",
   image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85',
   h1: 'Luxury Interior Design & Execution Services in Bangalore',
   schemas: [makeCoreBreadcrumb('Services', 'services')],
@@ -103,10 +126,25 @@ routes.push({
       <p>Complete turnkey architecture, interior design, and bespoke furniture manufacturing for residential, corporate, and commercial clients in Bangalore.</p>
     </header>
     <main>
-      <h2>Comprehensive Interior Design Offerings</h2>
+      <h2>Choose a Service for Your Project</h2>
+      <p>Start with the type of space and work you need. Each service page explains its focus; final inclusions, materials, schedule, and pricing are confirmed against the property and written project scope.</p>
       <ul>
-        ${servicesData.map(s => `<li><a href="/services/${s.slug}/"><h3>${s.title} in Bangalore</h3></a><p>${s.shortDescription}</p></li>`).join('')}
+        ${servicesData.map(s => `<li><h3><a href="/services/${s.slug}/">${s.title} in Bangalore</a></h3><p>${s.shortDesc}</p></li>`).join('')}
       </ul>
+      <section>
+        <h2>How to Compare Interior Service Proposals</h2>
+        <p>Give each provider the same room list, drawings, finish preferences, and requirements. Compare design work, civil and electrical scope, furniture, materials, taxes, delivery, installation, exclusions, and the written process for approving changes.</p>
+        <p>For home projects, use the <a href="/blog/interior-design-cost-in-bangalore-guide/">Bangalore interior design cost guide</a> to prepare questions and compare estimates. Review <a href="/projects/">project examples</a> for context, then <a href="/contact/">contact IDC to discuss your requirements</a>.</p>
+      </section>
+      <section>
+        <h2>Questions to Ask Before Starting</h2>
+        <h3>What should an interior design estimate include?</h3>
+        <p>Ask for a written room-by-room scope with materials, quantities, taxes, delivery, installation, exclusions, and any optional items clearly identified.</p>
+        <h3>Can I request only selected services?</h3>
+        <p>Share the property details and the work you need. IDC can confirm whether the requested scope and site are a fit after reviewing the enquiry.</p>
+        <h3>How do I get a project-specific price?</h3>
+        <p>Provide available measurements, plans, photos, finish preferences, and priorities. A project-specific estimate depends on verified site conditions and selected specifications.</p>
+      </section>
     </main>
   `
 });
@@ -247,7 +285,7 @@ routes.push({
   path: '/locations',
   canonical: 'https://indiandecorcompany.in/locations/',
   title: 'Bangalore Interior Design Service Areas | Indian Decor Company',
-  description: "Explore Indian Decor Company's Bangalore interior design service areas. Project fit and site availability are confirmed individually; listed areas are not separate studio addresses.",
+  description: "Explore Bangalore interior design service areas. IDC confirms project fit and site availability individually; listed areas are not separate offices.",
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Bangalore Interior Design Service Areas',
   schemas: [makeCoreBreadcrumb('Locations', 'locations')],

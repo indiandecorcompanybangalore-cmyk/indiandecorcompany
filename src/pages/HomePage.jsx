@@ -159,7 +159,7 @@ export const HomePage = () => {
 
       <MetaTags
         title="Interior Designers in Bangalore | Indian Decor Company"
-        description="Compare interior design services in Bangalore for homes, offices, and commercial spaces. Explore Indian Decor Company’s design, turnkey, and custom furniture work."
+        description="Explore Indian Decor Company's residential and commercial interior design services in Bangalore. View projects, compare service scopes and plan your budget."
         canonical="https://indiandecorcompany.in/"
       />
       <SchemaJsonLd type="Organization" />
@@ -677,6 +677,29 @@ export const HomePage = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '72px 0', backgroundColor: '#F7F7F5', color: '#14161A' }}>
+        <div className="container-custom">
+          <span style={{ fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.18em', color: 'var(--color-gold-dark)', textTransform: 'uppercase' }}>
+            PLAN YOUR PROJECT
+          </span>
+          <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(2rem, 3.4vw, 2.8rem)', margin: '10px 0 14px' }}>
+            Interior Design for Bangalore Homes and Workspaces
+          </h2>
+          <p style={{ maxWidth: '820px', color: '#4B5563', lineHeight: 1.75, marginBottom: '22px' }}>
+            Explore residential, office and commercial services, then review project examples that match your space. Scope, materials, schedule and pricing depend on the property and selected specifications, so prepare a room list, available measurements, photos and priorities before requesting an estimate.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '18px', marginBottom: '24px' }}>
+            <Link to="/services/residential-interiors/" style={{ color: '#765A35', fontWeight: 600 }}>Residential interiors <ArrowRight size={14} /></Link>
+            <Link to="/services/commercial-interiors/" style={{ color: '#765A35', fontWeight: 600 }}>Commercial interiors <ArrowRight size={14} /></Link>
+            <Link to="/services/office-interiors/" style={{ color: '#765A35', fontWeight: 600 }}>Office interiors <ArrowRight size={14} /></Link>
+            <Link to="/services/turnkey-interior-solutions/" style={{ color: '#765A35', fontWeight: 600 }}>Turnkey interiors <ArrowRight size={14} /></Link>
+          </div>
+          <p style={{ maxWidth: '820px', color: '#4B5563', lineHeight: 1.75 }}>
+            Compare estimates using the same written scope, including inclusions, exclusions, materials, installation and taxes. <Link to="/blog/interior-design-cost-in-bangalore-guide/" style={{ color: '#765A35', fontWeight: 600 }}>Read the Bangalore cost-planning guide</Link>, <Link to="/projects/" style={{ color: '#765A35', fontWeight: 600 }}>browse project examples</Link>, or <Link to="/contact/" style={{ color: '#765A35', fontWeight: 600 }}>contact IDC</Link> to discuss your requirements.
+          </p>
         </div>
       </section>
 
