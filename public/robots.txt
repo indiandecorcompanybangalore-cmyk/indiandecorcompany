@@ -11,13 +11,14 @@ Disallow: /cart
 # Content Signals for AI & Search Engines
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 
-# Search & Answer Engine Crawlers
+# Search Engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+# Generative AI & Answer Engine Crawlers (AEO / GEO)
 User-agent: GPTBot
 Allow: /
 
@@ -30,5 +31,14 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Canonical XML Sitemap
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Canonical XML Sitemap & LLMs Documentation
 Sitemap: https://indiandecorcompany.in/sitemap.xml

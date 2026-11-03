@@ -9,9 +9,9 @@ export const LegalPage = () => {
   return (
     <div style={{ backgroundColor: '#F8F9FA', color: '#111827', minHeight: '100vh', paddingTop: '110px', paddingBottom: '90px' }}>
       <MetaTags
-        title="Policies & Terms | Indian Decor Company (IDC)"
-        description="Review IDC's Privacy Policy, Terms of Service, Furniture White-Glove Shipping Policy, and 10-Year Craftsmanship Warranty."
-        canonical="https://indiandecorcompany.in/legal"
+        title="Policies, Terms & Warranties | Indian Decor Company"
+        description="Review Indian Decor Company's privacy policy, terms of service, white-glove furniture delivery guidelines, and 10-year craftsmanship warranty terms."
+        canonical="https://indiandecorcompany.in/legal/"
       />
       <SchemaJsonLd
         type="BreadcrumbList"

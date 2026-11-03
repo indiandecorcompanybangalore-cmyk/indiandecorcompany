@@ -13,8 +13,8 @@ export const BlogPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="Interior Design Insights & Guides Bangalore | IDC Journal"
-        description="Expert insights on interior design trends, modular kitchen ergonomics, false ceiling costs, and custom furniture manufacturing in Bangalore."
+        title="Interior Design Insights & Guides in Bangalore | IDC Journal"
+        description="Read interior design guides on home trends, false ceilings, office design, and Bangalore project budgets from Indian Decor Company."
         canonical="https://indiandecorcompany.in/blog"
       />
       <SchemaJsonLd

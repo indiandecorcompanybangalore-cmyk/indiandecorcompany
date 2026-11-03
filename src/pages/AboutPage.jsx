@@ -11,9 +11,9 @@ export const AboutPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="About Indian Decor Company (IDC) | Luxury Interiors & Custom Furniture Bangalore"
-        description="Learn about IDC's journey, our Bangalore design pavilion, advanced furniture manufacturing facility, and architectural philosophy of crafting timeless spaces."
-        canonical="https://indiandecorcompany.in/about"
+        title="About Us | Interior Design Studio Bangalore | IDC"
+        description="Learn about Indian Decor Company's Bangalore design studio, in-house furniture workshop, architectural philosophy, and turnkey interior fitout standards."
+        canonical="https://indiandecorcompany.in/about/"
       />
       <SchemaJsonLd type="Organization" />
       <SchemaJsonLd

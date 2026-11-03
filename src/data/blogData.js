@@ -2,8 +2,8 @@ export const blogArticles = [
   {
     id: "latest-trends-modern-home-interiors",
     slug: "latest-trends-modern-home-interiors",
-    title: "Latest Trends in Modern Home Interiors for 2026",
-    subtitle: "From curvilinear architectural furniture to tactile acoustic paneling, explore the key directions shaping Bangalore homes.",
+    title: "Modern Home Interior Trends in 2026 | IDC Insights",
+    subtitle: "From curvilinear architectural furniture to tactile acoustic paneling, explore the key directions shaping modern Bangalore homes in 2026.",
     category: "Interior Design",
     readTime: "6 min read",
     publishDate: "January 14, 2026",
@@ -38,8 +38,8 @@ Concealed ceiling coves and magnetic tracks now replace glaring downlights. Soft
   {
     id: "choose-right-false-ceiling-home",
     slug: "how-to-choose-the-right-false-ceiling-for-your-home",
-    title: "How to Choose the Right False Ceiling for Your Home",
-    subtitle: "A practical guide to drop heights, perimeter coves, acoustic materials, and concealed lighting profiles.",
+    title: "Choosing the Right False Ceiling for Your Home | IDC",
+    subtitle: "A practical guide to drop heights, perimeter coves, acoustic materials, and concealed architectural lighting profiles for Bangalore homes.",
     category: "False Ceiling & Lighting",
     readTime: "5 min read",
     publishDate: "February 02, 2026",
@@ -71,8 +71,8 @@ For modern minimalist living spaces, moisture-resistant Saint-Gobain Gyproc boar
   {
     id: "top-5-office-interior-trends-2026",
     slug: "top-5-office-interior-trends-in-2026",
-    title: "Top 5 Office Interior Trends in 2026",
-    subtitle: "How premier Bangalore tech companies are designing hybrid workspaces that boost retention and in-person energy.",
+    title: "Top 5 Office Interior Trends in 2026 | IDC Insights",
+    subtitle: "How premier Bangalore tech companies design hybrid workspaces that balance acoustic focus with collaborative energy and team retention.",
     category: "Commercial & Office",
     readTime: "7 min read",
     publishDate: "January 28, 2026",
@@ -104,7 +104,7 @@ Boardrooms and breakout areas are adopting lounge-like warmth: soft leather chai
   {
     id: "interior-design-cost-bangalore-guide",
     slug: "interior-design-cost-in-bangalore-guide",
-    title: "Interior Design Cost in Bangalore: How to Plan Your Budget",
+    title: "Interior Design Cost in Bangalore: Budget Guide | IDC",
     subtitle: "Plan a Bangalore home-interiors budget with a practical guide to comparing quotes, defining scope and checking what each estimate includes.",
     category: "Guides & Budgeting",
     readTime: "8 min read",

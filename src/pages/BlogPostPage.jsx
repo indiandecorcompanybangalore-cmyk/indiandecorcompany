@@ -18,7 +18,7 @@ export const BlogPostPage = () => {
   return (
     <div style={{ backgroundColor: '#F8F9FA', color: '#111827', minHeight: '100vh', paddingTop: '100px', paddingBottom: '90px' }}>
       <MetaTags
-        title={`${article.title} | IDC Insights Bangalore`}
+        title={article.title.includes("|") ? article.title : `${article.title} | IDC Insights`}
         description={article.subtitle}
         canonical={`https://indiandecorcompany.in/blog/${article.slug}`}
         ogType="article"

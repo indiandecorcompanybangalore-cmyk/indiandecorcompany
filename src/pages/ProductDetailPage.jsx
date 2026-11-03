@@ -89,7 +89,7 @@ export const ProductDetailPage = () => {
   return (
     <div style={{ backgroundColor: '#F8F9FA', color: '#111827', minHeight: '100vh', paddingTop: '100px', paddingBottom: '90px' }}>
       <MetaTags
-        title={`${product.name} | Luxury Handcrafted Furniture Bangalore | IDC`}
+        title={`${product.name} | IDC Furniture Bangalore`}
         description={product.shortDesc}
         canonical={`https://indiandecorcompany.in/shop/${product.category}/${product.slug}`}
         ogImage={product.image}

@@ -11,9 +11,9 @@ export const ManufacturingPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="Custom Furniture Manufacturer Bangalore | In-House Factory & Workshop | IDC"
-        description="IDC operates an advanced custom furniture manufacturing facility in Bangalore specializing in kiln-dried hardwood framing, CNC modular cutting, and master upholstery."
-        canonical="https://indiandecorcompany.in/furniture-manufacturer"
+        title="Custom Furniture Manufacturer in Bangalore | IDC"
+        description="Indian Decor Company offers custom furniture and modular cabinetry for residential and commercial interior projects in Bangalore."
+        canonical="https://indiandecorcompany.in/furniture-manufacturer/"
       />
       <SchemaJsonLd
         type="BreadcrumbList"

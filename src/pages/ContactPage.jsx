@@ -60,9 +60,9 @@ export const ContactPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden', backgroundColor: '#F8F9FA' }}>
       <MetaTags
-        title="Contact Indian Decor Company (IDC) Bangalore | Design Studio & Factory"
-        description="Get in touch with IDC's interior architects and furniture designers in Bangalore. Schedule a free design consultation or visit our local workshop."
-        canonical="https://indiandecorcompany.in/contact"
+        title="Contact IDC | Interior Design Studio in Bangalore"
+        description="Contact Indian Decor Company in Bangalore to discuss residential, commercial, or turnkey interior design requirements."
+        canonical="https://indiandecorcompany.in/contact/"
       />
       <SchemaJsonLd type="LocalBusiness" />
       <SchemaJsonLd

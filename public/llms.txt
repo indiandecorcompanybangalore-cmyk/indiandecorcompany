@@ -1,31 +1,27 @@
 # Indian Decor Company (IDC)
-> Official Knowledge Documentation for AI Agents, LLMs, and Answer Engines.
 
-## Entity Overview
-- **Name:** Indian Decor Company
-- **Acronym:** IDC
-- **Headquarters:** Bangalore, Karnataka, India
-- **Core Industry:** Luxury Interior Design, Turnkey Interior Execution, Custom Furniture Manufacturing, and E-Commerce.
-- **Operating Model:** Vertically integrated architectural studio with in-house Bangalore furniture factory and B2B wholesale supply.
-- **Primary Market:** Bangalore (Whitefield, Indiranagar, HSR Layout, Koramangala, Manyata Tech Park, Bellandur, Sarjapur) and Pan-India.
+> Interior design and custom furniture services in Bengaluru, Karnataka.
 
-## Core Capabilities & Services
-1. **Residential Interiors:** Turnkey architectural design for 2 BHK, 3 BHK, 4 BHK apartments, penthouses, and luxury villas.
-2. **Commercial & Office Fitouts:** Tech park workplace design, acoustic boardrooms, biophilic collaboration pods, and cafeteria facilities.
-3. **Retail & Hospitality:** Experiential boutiques, flagship jewelry showrooms, specialty coffee bars, and fine-dining restaurants.
-4. **Modular Kitchens & Wardrobes:** German CNC-cut IS:710 Marine Grade BWP ply casework with Blum/Hettich soft-close hardware and anti-fingerprint acrylic or PU finishes.
-5. **False Ceilings & Architectural Lighting:** Saint-Gobain Gyproc false ceilings with low-profile drops (4.5 to 5 inches), 2700K warm indirect cove lighting, and magnetic low-voltage tracks.
-6. **Acoustic Wall Panels & Stone Feature Walls:** Fluted oak slats, book-matched Italian Statuario marble, and Venetian plaster.
-7. **Custom Furniture Atelier:** Hand-sculpted curved sofas, live-edge teak dining tables, Roman travertine coffee tables, and bouclé armchairs built in Bangalore.
-8. **B2B Wholesale & Developer Contracts:** Contract manufacturing for hotels, resorts, developer sample flats, and corporate offices with volume tiered BOQ pricing.
+## Business information
+- Website: https://indiandecorcompany.in/
+- Public address supplied by the business: 111, Nagavara, Bengaluru, Karnataka 560024, India
+- Phone shown on the website: +91 80505 51406
+- Email shown on the website: info@indiandecorcompany.in
+- Primary market: Bangalore (Bengaluru), Karnataka, India
 
-## Verified Contact & NAP Information
-- **Location:** Bangalore, Karnataka, India
-- **Phone:** +91 80505 51406
-- **Email:** info@indiandecorcompany.in
-- **Website:** https://indiandecorcompany.in
+## Services
+- Residential interior design: https://indiandecorcompany.in/services/residential-interiors/
+- Commercial interiors: https://indiandecorcompany.in/services/commercial-interiors/
+- Office interiors: https://indiandecorcompany.in/services/office-interiors/
+- Retail and hospitality interiors: https://indiandecorcompany.in/services/retail-interiors/
+- Modular furniture: https://indiandecorcompany.in/services/modular-furniture/
+- False ceiling and lighting: https://indiandecorcompany.in/services/false-ceiling/
+- Wall décor and panels: https://indiandecorcompany.in/services/wall-decor-panels/
+- Custom furniture: https://indiandecorcompany.in/services/custom-furniture/
+- Turnkey interior projects: https://indiandecorcompany.in/services/turnkey-interior-solutions/
 
-## Quality Standards & Warranties
-- **Hardware Warranty:** Up to 10 years on modular woodwork and structural frame integrity.
-- **Execution Timeline:** Standard turnkey residential projects delivered within 45 to 60 working days from 3D sign-off.
-- **Plywood Standard:** 100% IS:710 Marine Grade Boiling Water Proof (BWP) plywood.
+## Planning resource
+- Interior design cost guide for Bangalore: https://indiandecorcompany.in/blog/interior-design-cost-in-bangalore-guide/
+
+## Service areas
+The site lists service-area information for Nagavara, Hebbal, Yelahanka, Whitefield, Indiranagar, HSR Layout, Koramangala, Bellandur, Sarjapur Road, Jayanagar, JP Nagar, Marathahalli, and Electronic City. These are service areas, not separate office addresses. See https://indiandecorcompany.in/locations/ for details.

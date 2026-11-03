@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.js && npm run validate:schema && npm run validate:links",
+    "build": "vite build && node scripts/prerender.js && npm run validate:schema && npm run validate:links && npm run validate:metadata",
     "validate:schema": "node scripts/validate-jsonld.js",
     "validate:links": "node scripts/validate-internal-links.js",
-    "predeploy": "npm run validate:schema && npm run validate:links",
+    "validate:metadata": "node scripts/validate-seo-metadata.js",
+    "predeploy": "npm run validate:schema && npm run validate:links && npm run validate:metadata",
     "deploy": "npm run build && wrangler pages deploy dist --project-name indiandecorcompany",
     "lint": "oxlint",
     "preview": "vite preview"

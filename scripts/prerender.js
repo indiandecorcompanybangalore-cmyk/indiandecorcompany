@@ -92,8 +92,8 @@ routes.push({
 routes.push({
   path: '/about',
   canonical: 'https://indiandecorcompany.in/about/',
-  title: 'About Indian Decor Company (IDC) | Luxury Interiors & Custom Furniture Bangalore',
-  description: "Learn about IDC's journey, our Bangalore design pavilion, advanced furniture manufacturing facility, and architectural philosophy of crafting timeless spaces.",
+  title: 'About Us | Interior Design Studio Bangalore | IDC',
+  description: "Learn about Indian Decor Company's Bangalore design studio, in-house furniture workshop, architectural philosophy, and turnkey interior fitout standards.",
   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85',
   h1: 'Designing Luxury Spaces & Bespoke Furniture in Bangalore',
   schemas: [makeCoreBreadcrumb('About Us', 'about')],
@@ -152,8 +152,8 @@ routes.push({
 routes.push({
   path: '/projects',
   canonical: 'https://indiandecorcompany.in/projects/',
-  title: 'Our Projects | Luxury Interior & Turnkey Portfolio Bangalore | IDC',
-  description: "Explore Indian Decor Company's portfolio of luxury villas, penthouses, tech offices, and retail showrooms across Whitefield, Indiranagar, and Bangalore.",
+  title: 'Interior Design Projects in Bangalore | IDC Portfolio',
+  description: "Explore Indian Decor Company's portfolio of residential villas, penthouses, modern apartments, and tech office interiors completed across Bangalore.",
   image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85',
   h1: 'Luxury Interior Design Projects & Portfolio in Bangalore',
   schemas: [makeCoreBreadcrumb('Projects', 'projects')],
@@ -174,8 +174,8 @@ routes.push({
 routes.push({
   path: '/shop',
   canonical: 'https://indiandecorcompany.in/shop/',
-  title: 'Premium Home Décor & Furniture Collection | IDC Interiors Store',
-  description: 'Shop curated luxury furniture, architectural lighting, rugs, and home decor accessories crafted by Indian Decor Company in Bangalore.',
+  title: 'Furniture & Home Décor Store in Bangalore | IDC',
+  description: 'Explore furniture, architectural lighting, rugs, and home décor accessories from Indian Decor Company in Bangalore.',
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Premium Home Décor & Furniture Collection Bangalore',
   schemas: [makeCoreBreadcrumb('Shop', 'shop')],
@@ -196,8 +196,8 @@ routes.push({
 routes.push({
   path: '/materials',
   canonical: 'https://indiandecorcompany.in/materials/',
-  title: 'Curated Architectural Materials & Finishes Library | IDC Bangalore',
-  description: "Explore IDC's tactile library of Italian marble, smoked oak veneers, anti-fingerprint laminates, brushed champagne brass, and Belgian bouclé fabrics.",
+  title: 'Architectural Materials & Finishes Library | IDC',
+  description: "Explore IDC's curated materials library in Bangalore: Italian marble, smoked oak veneers, anti-fingerprint laminates, brass accents, and bouclé fabrics.",
   image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85',
   h1: 'Curated Architectural Materials & Finishes Library Bangalore',
   schemas: [makeCoreBreadcrumb('Materials', 'materials')],
@@ -228,8 +228,8 @@ routes.push({
 routes.push({
   path: '/furniture-manufacturer',
   canonical: 'https://indiandecorcompany.in/furniture-manufacturer/',
-  title: 'Custom Furniture Manufacturer Bangalore | In-House Factory & Workshop | IDC',
-  description: 'IDC operates an advanced custom furniture manufacturing facility in Bangalore specializing in kiln-dried hardwood framing, CNC modular cutting, and master upholstery.',
+  title: 'Custom Furniture Manufacturer in Bangalore | IDC',
+  description: 'Indian Decor Company offers custom furniture and modular cabinetry for residential and commercial interior projects in Bangalore.',
   image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=85',
   h1: 'Custom Furniture Manufacturing in Bangalore',
   schemas: [makeCoreBreadcrumb('Furniture Manufacturing', 'furniture-manufacturer')],
@@ -244,8 +244,8 @@ routes.push({
 routes.push({
   path: '/blog',
   canonical: 'https://indiandecorcompany.in/blog/',
-  title: 'Interior Design Insights & Guides Bangalore | IDC Journal',
-  description: 'Expert insights on interior design trends, modular kitchen ergonomics, false ceiling costs, and custom furniture manufacturing in Bangalore.',
+  title: 'Interior Design Insights & Guides in Bangalore | IDC Journal',
+  description: 'Read interior design guides on home trends, false ceilings, office design, and Bangalore project budgets from Indian Decor Company.',
   image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85',
   h1: 'Interior Design Insights & Guides — Bangalore',
   schemas: [makeCoreBreadcrumb('Blog', 'blog')],
@@ -266,8 +266,8 @@ routes.push({
 routes.push({
   path: '/contact',
   canonical: 'https://indiandecorcompany.in/contact/',
-  title: 'Contact Indian Decor Company (IDC) Bangalore | Design Studio & Factory',
-  description: "Get in touch with IDC's interior architects and furniture designers in Bangalore. Schedule a free design consultation or visit our local workshop.",
+  title: 'Contact IDC | Interior Design Studio in Bangalore',
+  description: "Contact Indian Decor Company in Bangalore to discuss residential, commercial, or turnkey interior design requirements.",
   image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85',
   h1: 'Contact Indian Decor Company Bangalore',
   schemas: [makeCoreBreadcrumb('Contact Us', 'contact')],
@@ -306,8 +306,8 @@ routes.push({
 routes.push({
   path: '/legal',
   canonical: 'https://indiandecorcompany.in/legal/',
-  title: 'Policies & Terms | Indian Decor Company (IDC)',
-  description: "Review IDC's Privacy Policy, Terms of Service, Furniture White-Glove Shipping Policy, and 10-Year Craftsmanship Warranty.",
+  title: 'Policies, Terms & Warranties | Indian Decor Company',
+  description: "Review Indian Decor Company's privacy policy, terms of service, white-glove furniture delivery guidelines, and 10-year craftsmanship warranty terms.",
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Policies, Terms & Warranties',
   schemas: [makeCoreBreadcrumb('Policies & Legal', 'legal')],
@@ -472,8 +472,8 @@ for (const loc of bangaloreLocations) {
   routes.push({
     path: `/locations/${loc.slug}`,
     canonical: `https://indiandecorcompany.in/locations/${loc.slug}/`,
-    title: `${loc.headline} | Indian Decor Company`,
-    description: loc.description,
+    title: loc.metaTitle || `Interior Designers in ${loc.name.split(',')[0]}, Bangalore | IDC`,
+    description: loc.metaDescription || loc.description,
     image: loc.heroImage,
     h1: loc.headline,
     schemas: [
@@ -537,8 +537,8 @@ for (const cat of productCategories) {
   routes.push({
     path: `/shop/${cat.slug}`,
     canonical: `https://indiandecorcompany.in/shop/${cat.slug}/`,
-    title: `${cat.name} Collection | Luxury Furniture & Décor Bangalore | IDC`,
-    description: `Shop handcrafted luxury ${cat.name.toLowerCase()} in Bangalore by Indian Decor Company. Factory-direct pricing, custom artisan finishes, and white-glove delivery.`,
+    title: `${cat.name} Collection Bangalore | IDC Store`,
+    description: `Shop handcrafted luxury ${cat.name.toLowerCase()} in Bangalore by Indian Decor Company. Factory-direct pricing, custom finishes, and white-glove delivery.`,
     image: cat.image,
     h1: `${cat.name} Luxury Collection Bangalore`,
     schemas: [breadcrumbsSchema],
@@ -607,7 +607,7 @@ for (const product of shopProductsData) {
   routes.push({
     path: `/shop/${product.category}/${product.slug}`,
     canonical: `https://indiandecorcompany.in/shop/${product.category}/${product.slug}/`,
-    title: `${product.name} | Luxury Handcrafted Furniture Bangalore | IDC`,
+    title: `${product.name} | IDC Furniture Bangalore`,
     description: product.shortDesc,
     image: product.image,
     h1: product.name,
@@ -698,7 +698,7 @@ for (const article of blogArticles) {
   routes.push({
     path: `/blog/${article.slug}`,
     canonical: `https://indiandecorcompany.in/blog/${article.slug}/`,
-    title: `${article.title} | IDC Insights Bangalore`,
+    title: article.title.includes('|') ? article.title : `${article.title} | IDC Insights`,
     description: article.subtitle,
     image: article.image,
     h1: article.title,

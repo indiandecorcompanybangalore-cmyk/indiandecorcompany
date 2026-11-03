@@ -12,9 +12,9 @@ export const MaterialsPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="Curated Architectural Materials & Finishes Library | IDC Bangalore"
-        description="Explore IDC's tactile library of Italian marble, smoked oak veneers, anti-fingerprint laminates, brushed champagne brass, and Belgian bouclé fabrics."
-        canonical="https://indiandecorcompany.in/materials"
+        title="Architectural Materials & Finishes Library | IDC"
+        description="Explore IDC's curated materials library in Bangalore: Italian marble, smoked oak veneers, anti-fingerprint laminates, brass accents, and bouclé fabrics."
+        canonical="https://indiandecorcompany.in/materials/"
       />
       <SchemaJsonLd
         type="BreadcrumbList"

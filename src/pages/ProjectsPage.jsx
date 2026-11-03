@@ -20,9 +20,9 @@ export const ProjectsPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title="Our Projects | Luxury Interior & Turnkey Portfolio Bangalore | IDC"
-        description="Explore Indian Decor Company's portfolio of luxury villas, penthouses, tech offices, and retail showrooms across Whitefield, Indiranagar, and Bangalore."
-        canonical="https://indiandecorcompany.in/projects"
+        title="Interior Design Projects in Bangalore | IDC Portfolio"
+        description="Explore Indian Decor Company's portfolio of residential villas, penthouses, modern apartments, and tech office interiors completed across Bangalore."
+        canonical="https://indiandecorcompany.in/projects/"
       />
       <SchemaJsonLd
         type="BreadcrumbList"

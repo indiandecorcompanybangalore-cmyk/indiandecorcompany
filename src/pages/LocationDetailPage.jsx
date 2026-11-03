@@ -17,8 +17,8 @@ export const LocationDetailPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title={`Interior Designers in ${location.name} | Luxury Home & Villa Interiors | IDC`}
-        description={location.description}
+        title={location.metaTitle || `Interior Designers in ${location.name.split(",")[0]}, Bangalore | IDC`}
+        description={location.metaDescription || location.description}
         canonical={`https://indiandecorcompany.in/locations/${location.slug}/`}
         ogImage={location.heroImage}
       />
