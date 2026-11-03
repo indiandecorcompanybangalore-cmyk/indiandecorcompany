@@ -424,8 +424,8 @@ for (const project of projectsData) {
   routes.push({
     path: `/projects/${project.slug}`,
     canonical: `https://indiandecorcompany.in/projects/${project.slug}/`,
-    title: `${project.title} — ${project.location} | Indian Decor Company Case Study`,
-    description: project.overview,
+    title: `${project.title} — ${project.location.split(",")[0]} | IDC Case Study`,
+    description: project.metaDescription || project.overview,
     image: project.image,
     h1: project.title,
     schemas: [breadcrumbsSchema],

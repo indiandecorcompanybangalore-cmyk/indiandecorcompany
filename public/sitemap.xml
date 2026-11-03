@@ -76,6 +76,30 @@
 
   <!-- Service Subpages -->
   <url>
+    <loc>https://indiandecorcompany.in/services/modular-kitchen/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/services/luxury-villa-interiors/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/services/home-renovation/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/services/wardrobe-design/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://indiandecorcompany.in/services/residential-interiors/</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -408,6 +432,18 @@
     <loc>https://indiandecorcompany.in/blog/interior-design-cost-in-bangalore-guide/</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/blog/3bhk-interior-design-cost-in-bangalore/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://indiandecorcompany.in/blog/2bhk-interior-design-cost-in-bangalore/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 </urlset>

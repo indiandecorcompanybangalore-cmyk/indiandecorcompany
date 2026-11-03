@@ -1,5 +1,158 @@
 export const servicesData = [
   {
+    id: "modular-kitchen",
+    slug: "modular-kitchen",
+    title: "Modular Kitchens",
+    shortDesc: "Custom modular kitchen design and manufacturing in Bangalore with marine-grade ply, Blum hardware, acrylic finishes, and 10-year warranty.",
+    heroImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=85",
+    iconName: "Utensils",
+    featured: true,
+    pricingEstimate: "₹2.5 Lakh – ₹8.5 Lakh+",
+    scope: [
+      "Precision 3D ergonomic kitchen layouts (L-shaped, U-shaped, parallel & island)",
+      "IS:710 BWP marine plywood carcass with anti-termite and moisture protection",
+      "German soft-close hinges, tandem boxes and lift-ups (Blum & Hettich)",
+      "Premium shutter finishes: High-gloss Acrylic, Matte PU Lacquer, Ceramic & Glass",
+      "Quartz, granite and sintered stone countertop fabrication with sink cutouts"
+    ],
+    overview: "Indian Decor Company manufactures precision modular kitchens in Bangalore built for heavy daily Indian cooking. Every modular cabinet is pre-fabricated in our local workshop using boiling waterproof (IS:710) marine ply and European hardware, ensuring zero swelling, seamless soft-close movement, and lifelong durability.",
+    process: [
+      { step: "01", title: "Cooking Routine Audit", desc: "Assessing storage zones, spice pullouts, appliance integration, and counter heights." },
+      { step: "02", title: "3D Ergonomic Walkthrough", desc: "Detailed 3D renders showing the golden work triangle, internal wire baskets, and lighting." },
+      { step: "03", title: "Factory CNC Joinery", desc: "Precision edge-banding and carcass fabrication in our Bangalore manufacturing facility." },
+      { step: "04", title: "Dust-Free Installation", desc: "On-site assembly and countertop fitting completed within 4 to 6 working days." }
+    ],
+    faqs: [
+      {
+        question: "What is the typical cost of a modular kitchen in Bangalore?",
+        answer: "A standard 2 BHK L-shaped modular kitchen in Bangalore starts at ₹2.5 Lakh to ₹3.8 Lakh with laminate finish and soft-close hardware. Premium acrylic or PU lacquered island kitchens range between ₹4.5 Lakh and ₹8.5 Lakh+ depending on quartz countertops and built-in appliances."
+      },
+      {
+        question: "Which material is best for modular kitchen cabinets in Bangalore?",
+        answer: "We strictly recommend IS:710 Grade Boiling Waterproof (BWP) marine plywood for all base carcasses and sink modules to resist moisture and humidity. For dry wall cabinets, IS:303 BWR ply is an economical and sturdy alternative."
+      },
+      {
+        question: "How long does manufacturing and installation take?",
+        answer: "Factory fabrication takes 25 to 30 days after design sign-off. Once delivered to your apartment, final installation and appliance testing takes just 4 to 6 working days."
+      }
+    ]
+  },
+  {
+    id: "luxury-villa-interiors",
+    slug: "luxury-villa-interiors",
+    title: "Luxury Villa Interiors",
+    shortDesc: "Turnkey luxury villa interior designers in Bangalore for duplexes and gated communities in Whitefield, Sarjapur, Yelahanka, and North Bangalore.",
+    heroImage: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85",
+    iconName: "Castle",
+    featured: true,
+    pricingEstimate: "₹25 Lakh – ₹75 Lakh+",
+    scope: [
+      "Double-height foyer and living room architectural space planning",
+      "Imported Italian marble book-matching and seamless diamond polishing",
+      "Bespoke solid wood joinery, fluted wall paneling, and acoustic ceiling baffles",
+      "Home automation integration with smart mood lighting and motorized blinds",
+      "Private master suite sanctuaries with walk-in dressing rooms and spa bathrooms"
+    ],
+    overview: "IDC’s luxury villa interior design studio caters to discerning homeowners across Bangalore's premier enclaves, including Prestige Golfshire, Epsilon, Adarsh Palm Meadows, and Raffles Park. We provide end-to-end architectural transformations that balance dramatic double-height scale with intimate everyday luxury.",
+    process: [
+      { step: "01", title: "Architectural Visioning", desc: "Reviewing structural floorplans, natural light orientation, and grand spatial flow." },
+      { step: "02", title: "Photorealistic 3D Renders", desc: "Developing hyper-detailed material boards, lighting simulations, and custom furniture pieces." },
+      { step: "03", title: "Artisanal Production", desc: "Handcrafting custom veneers, marble plinths, and architectural paneling in Bangalore." },
+      { step: "04", title: "Turnkey White-Glove Handover", desc: "Full site coordination, MEP synchronization, and deep clean styling before handover." }
+    ],
+    faqs: [
+      {
+        question: "What is the average budget for villa interior design in Bangalore?",
+        answer: "A complete turnkey villa interior in Bangalore generally ranges between ₹25 Lakh for essential luxury packages up to ₹75 Lakh+ for ultra-luxury specifications with Italian marble, home automation, and imported designer fixtures."
+      },
+      {
+        question: "Do you handle civil and structural modifications for villas?",
+        answer: "Yes, our in-house civil engineering team manages internal wall reconfigurations, staircase redesigns, false ceiling framework, electrical re-routing, and exterior patio integration with full society compliance."
+      },
+      {
+        question: "How long does a full villa interior project take?",
+        answer: "Turnkey villa execution in Bangalore typically takes between 75 and 110 working days, depending on overall square footage (3,500 to 7,500+ sq.ft) and custom stonework complexity."
+      }
+    ]
+  },
+  {
+    id: "home-renovation",
+    slug: "home-renovation",
+    title: "Home Renovation & Remodeling",
+    shortDesc: "Complete home renovation and flat remodeling in Bangalore. Civil changes, bathroom overhauls, modular upgrades, and turnkey interior retrofits.",
+    heroImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85",
+    iconName: "Wrench",
+    featured: true,
+    pricingEstimate: "₹1,200 – ₹2,800 per sq.ft",
+    scope: [
+      "Complete civil demolition, debris disposal, and structural wall remodeling",
+      "Bathroom tiling, concealed plumbing updates, and premium CP fixture fittings",
+      "Full electrical rewiring, breaker panel upgrades, and designer lighting conduits",
+      "Kitchen demolition and contemporary modular replacement with chimney ducting",
+      "Anti-termite wood treatment, premium wall repainting, and floor polishing"
+    ],
+    overview: "Transform aging Bangalore apartments and independent houses into modern, high-functioning residences with Indian Decor Company’s turnkey renovation service. We handle challenging civil changes, plumbing retrofits, and society permissions with zero hassle and strict milestone timelines.",
+    process: [
+      { step: "01", title: "On-Site Structural Audit", desc: "Inspecting dampness, plumbing lines, load-bearing walls, and electrical load capacity." },
+      { step: "02", title: "Remodeling Blueprint & BOQ", desc: "Detailed architectural drawings with line-item Bill of Quantities to prevent cost overruns." },
+      { step: "03", title: "Demolition & Civil Upgrades", desc: "Dust-controlled demolition, masonry repairs, waterproof tiling, and concealed MEP works." },
+      { step: "04", title: "Finish Carpentry & Styling", desc: "Modular furniture installation, final Asian Paints Royale coatings, and site handover." }
+    ],
+    faqs: [
+      {
+        question: "How much does apartment renovation cost in Bangalore?",
+        answer: "A full 2 BHK or 3 BHK apartment renovation in Bangalore typically costs between ₹1,200 and ₹2,800 per sq.ft. A standard 1,200 sq.ft flat retrofit covering kitchen, 2 bathrooms, flooring, and paint averages ₹8 Lakh to ₹16 Lakh."
+      },
+      {
+        question: "Can you renovate an apartment while the family stays nearby?",
+        answer: "Yes, we implement strict dust-containment barriers and phased milestone execution so that key rooms can be handed over systematically with minimal disruption."
+      },
+      {
+        question: "Do you assist with apartment association and society permissions in Bangalore?",
+        answer: "Yes, we prepare architectural floorplans, work schedules, and insurance clearances required by Bangalore resident welfare associations (RWAs) prior to demolition."
+      }
+    ]
+  },
+  {
+    id: "wardrobe-design",
+    slug: "wardrobe-design",
+    title: "Custom Wardrobes & Storage",
+    shortDesc: "Custom sliding wardrobes, walk-in closets, and lacquered glass wardrobes in Bangalore manufactured with factory-direct marine ply and German hardware.",
+    heroImage: "https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=1400&q=85",
+    iconName: "FolderHeart",
+    featured: true,
+    pricingEstimate: "₹1,400 – ₹3,200 per sq.ft",
+    scope: [
+      "Floor-to-ceiling sliding wardrobes with anti-jump German roller mechanisms",
+      "Walk-in dressing suites with tinted sensor glass and integrated LED strip profiles",
+      "Ergonomic internal dividers: pull-out trouser racks, tie holders, and jewelry trays",
+      "Finishes in high-gloss acrylic, textured laminate, fluted wood, and lacquered glass",
+      "Lockable concealed digital vaults and hydraulic upper loft access"
+    ],
+    overview: "Maximize vertical storage while upgrading your master bedroom aesthetics with IDC’s custom wardrobe systems in Bangalore. Built with moisture-proof marine ply and precision CNC joinery, our wardrobes offer silent sliding glide, smart compartmentalization, and 10-year hardware warranties.",
+    process: [
+      { step: "01", title: "Wardrobe Storage Audit", desc: "Measuring hanging length, folded apparel volume, shoe collections, and accessory needs." },
+      { step: "02", title: "Internal Layout 3D Plan", desc: "Customizing drawer counts, sensor lighting, vanity mirrors, and shutter color palettes." },
+      { step: "03", title: "Bangalore Factory Joinery", desc: "Precision edge-banding and carcass routing in our dedicated Bangalore manufacturing hub." },
+      { step: "04", title: "Clean Bedroom Assembly", desc: "Rapid 2-day on-site assembly with zero dust cutting inside your bedroom." }
+    ],
+    faqs: [
+      {
+        question: "What is the cost per sq.ft for custom wardrobes in Bangalore?",
+        answer: "Modular wardrobes in Bangalore cost between ₹1,400 and ₹2,200 per sq.ft for premium laminate finishes. Luxury sliding wardrobes with tinted lacquered glass or acrylic profile shutters range from ₹2,400 to ₹3,200+ per sq.ft."
+      },
+      {
+        question: "Which is better for Bangalore bedrooms: sliding or hinged doors?",
+        answer: "Sliding wardrobes are ideal for rooms where walkway clearance is limited, saving up to 3 to 4 feet of floor space. Hinged wardrobes are recommended when full simultaneous visibility of all compartments is preferred."
+      },
+      {
+        question: "Do your wardrobes come with warranties?",
+        answer: "Yes, all IDC custom wardrobes carry a 10-year warranty on Blum and Hettich hardware along with anti-termite and moisture guarantees on our marine ply carcasses."
+      }
+    ]
+  },
+
+  {
     id: "residential-interiors",
     slug: "residential-interiors",
     title: "Residential Interiors",

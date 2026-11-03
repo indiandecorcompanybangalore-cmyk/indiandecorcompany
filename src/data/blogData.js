@@ -1,5 +1,146 @@
 export const blogArticles = [
   {
+    id: "3bhk-interior-design-cost-in-bangalore",
+    slug: "3bhk-interior-design-cost-in-bangalore",
+    title: "3 BHK Interior Design Cost in Bangalore: 2026 Budget Guide | IDC",
+    subtitle: "Itemized 3 BHK interior design cost breakdown in Bangalore covering Essential (₹6L-₹8L), Classic (₹10L-₹14L), and Premium (₹16L+) packages with real material costs.",
+    category: "Cost & Budget Guides",
+    readTime: "8 min read",
+    publishDate: "2026-02-10",
+    dateModified: "2026-10-28",
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+    author: "Indian Decor Company Editorial Team",
+    relatedServiceSlug: "residential-interiors",
+    faqs: [
+      {
+        question: "What is the realistic cost of 3 BHK interior design in Bangalore in 2026?",
+        answer: "In 2026, 3 BHK interior design in Bangalore ranges from ₹6.5 Lakh to ₹9 Lakh for essential packages (modular kitchen and 3 wardrobes in laminate). Turnkey classic packages average ₹10 Lakh to ₹15 Lakh including false ceiling, lighting, and living room woodwork. Premium packages with acrylic finishes and quartz countertops start at ₹16 Lakh+."
+      },
+      {
+        question: "What are the core inclusions for a 3 BHK interior package?",
+        answer: "A complete 3 BHK interior package includes an L-shaped or parallel modular kitchen with BWP marine ply, master bedroom wardrobe with loft, guest and kids bedroom wardrobes, living room TV entertainment console, shoe rack foyer unit, false ceiling with LED downlights, and premium wall painting."
+      },
+      {
+        question: "How much does a false ceiling cost for a 3 BHK in Bangalore?",
+        answer: "A standard gypsum board false ceiling (Saint-Gobain / Gyproc) costs between ₹110 and ₹145 per sq.ft in Bangalore. For a 1,500 sq.ft 3 BHK flat, false ceiling across the living, dining, and bedrooms typically totals ₹1.2 Lakh to ₹1.8 Lakh."
+      }
+    ],
+    content: `# 3 BHK Interior Design Cost in Bangalore: Complete 2026 Pricing Guide
+
+Designing a 3 BHK apartment in Bangalore requires balancing spatial elegance, durable modular carpentry, and realistic budget planning. Whether you have received keys to a new apartment in Whitefield, Sarjapur Road, Manyata Tech Park, or Bellandur, this guide breaks down realistic line-item costs so you can plan with complete financial clarity.
+
+## Realistic 3 BHK Budget Packages in Bangalore
+
+Interior design pricing in Bangalore is determined by square footage (typically 1,350 to 1,900 sq.ft for modern 3 BHK flats), material specifications (Commercial BWR Ply vs IS:710 Marine BWP Ply), and surface finishes (Laminate, Acrylic, or Matte PU Lacquer).
+
+### 1. Essential Package: ₹6.5 Lakh – ₹8.5 Lakh
+Best for rental properties or compact budget-conscious family homes:
+- Modular Kitchen in Boiling Water Resistant (BWR) ply with high-gloss laminate finish.
+- 3 Hinged Wardrobes with overhead lofts in commercial plywood.
+- Sleek wall-mounted TV entertainment unit in living room.
+- Foyer shoe rack with cushioned bench seating.
+- Standard brass and stainless steel soft-close hardware.
+
+### 2. Classic Turnkey Package: ₹10.0 Lakh – ₹14.5 Lakh
+Our most popular package for owner-occupied family residences:
+- Modular Kitchen in 100% IS:710 BWP Marine Plywood with German Blum / Hettich tandem boxes.
+- 1 Master Bedroom Floor-to-Ceiling Sliding Wardrobe with tinted lacquered glass profile.
+- 2 Premium Hinged Wardrobes with integrated dressing mirrors and organizer trays.
+- Gyproc Gypsum False Ceiling across living, dining, and master bedroom with warm LED troughs.
+- Multi-tier living room TV feature wall with fluted charcoal acoustic louvers.
+- Full interior repaint with Asian Paints Royale Luxury Emulsion.
+
+### 3. Luxury Bespoke Package: ₹16.0 Lakh – ₹25.0 Lakh+
+For luxury high-rise apartments and penthouses seeking signature finishes:
+- Island or Parallel Kitchen with German servo-drive lift-ups, quartz worktops, and acrylic shutters.
+- Walk-in closet suite with tinted sensor LED lighting and custom shoe vitrines.
+- Italian Statuario or book-matched marble cladding on key architectural feature walls.
+- Smart home automation for circadian lighting scenes and motorized curtains.
+- Custom-manufactured velvet and leather living and dining furniture from our Bangalore workshop.
+
+## Room-by-Room Cost Breakdown
+
+| Space / Component | Scope of Work | Estimated Bangalore Cost |
+| :--- | :--- | :--- |
+| **Modular Kitchen** | BWP Marine Ply, Blum tandem boxes, quartz top | ₹2.20L – ₹4.50L |
+| **Master Bedroom** | Sliding wardrobe with loft, king bed, side tables | ₹1.80L – ₹3.20L |
+| **Kids / Second Room** | Study desk, wardrobe with bookshelf, overhead storage | ₹1.20L – ₹2.10L |
+| **Guest Bedroom** | 3-door hinged wardrobe with mirror and loft | ₹0.90L – ₹1.60L |
+| **Living & Dining** | TV console, crockery unit, decorative paneling | ₹1.50L – ₹3.00L |
+| **Ceiling & Lighting** | Gyproc gypsum false ceiling, LED drivers, COB spots | ₹1.20L – ₹1.90L |
+| **Civil & Painting** | Electrical conduit shifting, Asian Paints Royale | ₹0.80L – ₹1.50L |
+
+## How to Avoid Unexpected Cost Escalations
+
+When comparing interior quotations from Bangalore interior firms, ensure every proposal itemizes carcass board thickness (18mm vs 16mm), hardware brands (branded Blum/Hettich vs unbranded generics), and tax transparency. At Indian Decor Company, all factory modular units are pre-fabricated with CNC precision in our Bangalore facility with guaranteed 45-day handovers.`
+  },
+  {
+    id: "2bhk-interior-design-cost-in-bangalore",
+    slug: "2bhk-interior-design-cost-in-bangalore",
+    title: "2 BHK Interior Design Cost in Bangalore: 2026 Budget Guide | IDC",
+    subtitle: "Complete 2 BHK interior design pricing in Bangalore from ₹4.5 Lakh to ₹9 Lakh. Compare woodwork specifications, false ceiling rates, and delivery timelines.",
+    category: "Cost & Budget Guides",
+    readTime: "7 min read",
+    publishDate: "2026-02-12",
+    dateModified: "2026-10-28",
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85",
+    author: "Indian Decor Company Editorial Team",
+    relatedServiceSlug: "residential-interiors",
+    faqs: [
+      {
+        question: "How much does a 2 BHK interior design cost in Bangalore in 2026?",
+        answer: "A standard 2 BHK interior in Bangalore (950 to 1,200 sq.ft) ranges between ₹4.5 Lakh and ₹6.5 Lakh for essential woodwork (kitchen and 2 wardrobes). A complete turnkey package with false ceiling, lighting, TV unit, and premium paint ranges between ₹7 Lakh and ₹9.5 Lakh."
+      },
+      {
+        question: "How long does it take to complete 2 BHK interiors in Bangalore?",
+        answer: "At Indian Decor Company, factory modular fabrication takes 25 to 30 days. Final on-site assembly and handover is completed within 12 to 15 working days, ensuring handover within 40 to 45 days total."
+      },
+      {
+        question: "Can I do modular kitchen and wardrobes first and other rooms later?",
+        answer: "Yes, our modular carpentry packages allow phased execution. You can begin with essential kitchen and bedroom storage, then add living room wall panels, study units, or false ceilings at your own pace."
+      }
+    ],
+    content: `# 2 BHK Interior Design Cost in Bangalore: Complete 2026 Budget Guide
+
+A 2 BHK apartment in Bangalore typically spans between 950 and 1,250 square feet. Planning smart, multifunctional interior design is essential to optimize every square foot of living area without cluttering walking aisles. Here is an honest, itemized cost overview for Bangalore apartment owners in 2026.
+
+## 2 BHK Interior Pricing Tiers
+
+### 1. Essential Woodwork Package: ₹4.5 Lakh – ₹6.0 Lakh
+Designed for compact 2 BHK layouts or rental investments:
+- Straight or L-shaped modular kitchen in BWR plywood with soft-close wire baskets.
+- Master bedroom 3-door wardrobe with lofts and internal lockable drawers.
+- Guest/Kids bedroom 2-door wardrobe in scratch-resistant laminate.
+- Minimalist floating TV console with concealed wire pass-throughs.
+
+### 2. Comprehensive Turnkey Package: ₹7.0 Lakh – ₹9.5 Lakh
+Our recommended package for young families and hybrid professionals:
+- L-shaped Modular Kitchen in 100% IS:710 Marine BWP Ply with acrylic shutters and quartz stone counter.
+- Master Bedroom Floor-to-Ceiling Sliding Wardrobe with integrated full-length vanity dresser.
+- Guest Bedroom Wardrobe with attached ergonomic home office study desk.
+- Ambient perimeter false ceiling in living and dining with dual-tone warm LED strip lighting.
+- Living room fluted wall paneling and custom entry shoe storage.
+- Premium Asian Paints Royale smooth interior finish across all rooms.
+
+## Line-Item Cost Summary for a 1,100 Sq.Ft 2 BHK Flat
+
+| Component | Inclusions | Typical Cost (INR) |
+| :--- | :--- | :--- |
+| **Kitchen Woodwork** | 18mm BWP marine ply, cutlery tray, bottle pullout | ₹1.80L – ₹2.80L |
+| **Master Bedroom** | Wardrobe with lofts, internal organizers | ₹1.30L – ₹2.10L |
+| **Guest / Study Room** | Wardrobe with integrated floating work desk | ₹1.10L – ₹1.70L |
+| **Living & Foyer** | TV unit with back-paneling, entryway shoe unit | ₹1.00L – ₹1.80L |
+| **Ceiling & Electrical** | Gyproc false ceiling, spot fixtures, LED strips | ₹0.80L – ₹1.30L |
+| **Surface Painting** | Putty touchups, primer, Asian Paints Royale finish | ₹0.60L – ₹1.00L |
+
+## Key Factors That Influence Your Final Cost
+
+1. **Core Carcass Material:** Boiling Waterproof (BWP) ply costs approximately 15% to 20% more than commercial MDF or particle board, but provides essential lifelong protection against Bangalore's humid monsoon seasons.
+2. **Shutter Finish:** Matte laminates are budget-friendly and durable; high-gloss acrylic and PU lacquer offer a seamless showroom sheen at a moderate premium.
+3. **Hardware Selection:** European fittings from Blum and Hettich guarantee smooth, silent movement for over 100,000 open-close cycles.`
+  },
+
+  {
     id: "latest-trends-modern-home-interiors",
     slug: "latest-trends-modern-home-interiors",
     title: "Modern Home Interior Trends in 2026 | IDC Insights",
