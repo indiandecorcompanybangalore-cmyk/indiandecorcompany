@@ -257,7 +257,7 @@ export const OpeningScreen = ({ onComplete }) => {
   // Dynamic vertical center for typography to maintain proportional gap on mobile screens
   const textCenterY = 280 + 193 * contentScale;
 
-  const containerOpacity = !imagesReady ? 0 : (isFadingOut ? 0 : maskOpacity);
+  const containerOpacity = isFadingOut ? 0 : maskOpacity;
 
   return (
     <div
@@ -274,7 +274,7 @@ export const OpeningScreen = ({ onComplete }) => {
         pointerEvents: (progress > 0.80 || isFadingOut) ? 'none' : 'auto',
         userSelect: 'none',
         opacity: containerOpacity,
-        transition: !imagesReady ? 'opacity 0.18s ease-in' : (isFadingOut ? 'opacity 0.22s ease-out' : 'none'),
+        transition: isFadingOut ? 'opacity 0.22s ease-out' : 'none',
         willChange: 'opacity'
       }}
     >
@@ -386,7 +386,11 @@ export const OpeningScreen = ({ onComplete }) => {
 
           {/* Authentic Full-Resolution IDC Letter Logos centered directly on letter "D" (500, 280) */}
           {/* Responsive contentScale prevents mobile clipping while maintaining GPU-accelerated rendering */}
-          <g transform={`translate(500, ${zoomFocusY}) scale(${cameraZoom * contentScale}) translate(-500, -280)`}>
+          <g
+            opacity={imagesReady ? 1 : 0}
+            style={{ transition: 'opacity 0.15s ease-in' }}
+            transform={`translate(500, ${zoomFocusY}) scale(${cameraZoom * contentScale}) translate(-500, -280)`}
+          >
             {/* === BOX 1 (LETTER I + PENDANT LAMPS) === */}
             <g
               opacity={outerBoxOpacity}
@@ -444,7 +448,8 @@ export const OpeningScreen = ({ onComplete }) => {
 
           {/* BRAND TYPOGRAPHY: Real Official IDC Wordmark from Vector Master - Perfectly scaled on mobile with zero clipping */}
           <g
-            opacity={brandOpacity}
+            opacity={imagesReady ? brandOpacity : 0}
+            style={{ transition: 'opacity 0.15s ease-in' }}
             transform={`translate(500, ${textCenterY}) scale(${brandZoomScale * contentScale}) translate(-500, -480)`}
           >
             <image
