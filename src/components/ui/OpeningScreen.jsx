@@ -86,6 +86,29 @@ export const OpeningScreen = ({ onComplete }) => {
     }, 220);
   }, [onComplete]);
 
+  // Search engine bot & accessibility bypass: auto-unlock immediately for crawlers, headless browsers, and reduced motion
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const ua = (navigator.userAgent || "").toLowerCase();
+    const isBot = /googlebot|bingbot|baiduspider|yandexbot|duckduckbot|slurp|facebookexternalhit|twitterbot|linkedinbot|ahrefsbot|semrushbot|chatgpt|perplexity|claudebot|bytespider|applebot/i.test(ua);
+    const isHeadless = Boolean(window.navigator?.webdriver);
+    const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+    if (isBot || isHeadless || prefersReducedMotion) {
+      completeAndUnlock();
+      return;
+    }
+
+    // Safety timeout: auto-unlock if user is idle for 4 seconds without dragging/scrolling
+    const safetyTimer = setTimeout(() => {
+      if (!isUnlockedRef.current && targetProgress.current < 0.72) {
+        completeAndUnlock();
+      }
+    }, 4000);
+
+    return () => clearTimeout(safetyTimer);
+  }, [completeAndUnlock]);
+
   // Smooth LERP Bidirectional Physics Loop - ONLY runs when animating, 0% CPU when idle!
   const updatePhysics = useCallback(() => {
     if (isUnlockedRef.current) {

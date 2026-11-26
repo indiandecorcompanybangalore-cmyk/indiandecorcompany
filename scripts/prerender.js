@@ -778,10 +778,10 @@ for (const route of routes) {
     html = html.replace('</head>', `${schemaScripts}\n  </head>`);
   }
 
-  // 7. Inject crawler-accessible HTML inside <noscript> for search engines and non-JS crawlers
-  // Keeping <div id="root"></div> completely empty prevents FOUC / raw text code flash for users on load and refresh
+  // 7. Inject crawler-accessible HTML directly inside <div id="root"> for Googlebot, search crawlers & AI answer engines.
+  // Content inside <div id="root"> is immediately parsed by both JS and non-JS clients without duplicate <h1> tags.
   if (route.html) {
-    html = html.replace('<noscript>', `<noscript>\n      ${route.html}\n`);
+    html = html.replace('<div id="root"></div>', `<div id="root">\n      ${route.html}\n    </div>`);
   }
 
   // Determine output directory & file
