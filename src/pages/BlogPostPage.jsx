@@ -203,6 +203,34 @@ export const BlogPostPage = () => {
               return <Heading key={index} style={{ margin: '1.5em 0 0.5em', color: '#111827', lineHeight: 1.3 }}>{renderInline(block.text)}</Heading>;
             }
             if (block.type === 'list') return <ul key={index} style={{ paddingLeft: '1.4em', margin: '0.5em 0 1em' }}>{block.items.map((item, itemIndex) => <li key={itemIndex} style={{ marginBottom: '0.45em' }}>{renderInline(item)}</li>)}</ul>;
+            if (block.type === 'table') {
+              return (
+                <div key={index} style={{ overflowX: 'auto', margin: '28px 0', border: '1px solid #E5E7EB', borderRadius: '12px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.04)', backgroundColor: '#FFFFFF', whiteSpace: 'normal' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.94rem' }}>
+                    <thead style={{ backgroundColor: '#F9FAFB', borderBottom: '2px solid var(--color-gold, #D4AF37)' }}>
+                      <tr>
+                        {block.headers.map((h, hIdx) => (
+                          <th key={hIdx} style={{ padding: '14px 18px', fontWeight: '700', color: '#111827', fontSize: '0.88rem', textTransform: 'uppercase', letterSpacing: '0.04em', borderRight: hIdx === block.headers.length - 1 ? 'none' : '1px solid #E5E7EB' }}>
+                            {renderInline(h)}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {block.rows.map((row, rIdx) => (
+                        <tr key={rIdx} style={{ borderBottom: rIdx === block.rows.length - 1 ? 'none' : '1px solid #F3F4F6', backgroundColor: rIdx % 2 === 0 ? '#FFFFFF' : '#FAFAFA' }}>
+                          {row.map((cell, cIdx) => (
+                            <td key={cIdx} style={{ padding: '14px 18px', color: '#374151', verticalAlign: 'top', borderRight: cIdx === row.length - 1 ? 'none' : '1px solid #F3F4F6' }}>
+                              {renderInline(cell)}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+            }
             return <p key={index} style={{ margin: '0 0 1em' }}>{renderInline(block.text)}</p>;
           })}
         </div>

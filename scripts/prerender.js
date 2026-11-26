@@ -691,6 +691,21 @@ for (const article of blogArticles) {
       }).join('');
       return `<ul>${items}</ul>`;
     }
+    if (block.type === 'table') {
+      const headerHtml = block.headers.map((h) => {
+        const safeH = h.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        return `<th style="padding: 12px 14px; border: 1px solid #2D3748; background-color: #1A1C23; color: #D4AF37; font-weight: 700; text-align: left;">${safeH}</th>`;
+      }).join('');
+      const rowsHtml = block.rows.map((row, rIdx) => {
+        const cellsHtml = row.map((c) => {
+          const safeC = c.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          return `<td style="padding: 12px 14px; border: 1px solid #2D3748; color: #E2E8F0; vertical-align: top;">${safeC}</td>`;
+        }).join('');
+        const bg = rIdx % 2 === 0 ? '#0F1013' : '#14171F';
+        return `<tr style="background-color: ${bg};">${cellsHtml}</tr>`;
+      }).join('');
+      return `<div style="overflow-x: auto; margin: 24px 0;"><table style="width: 100%; border-collapse: collapse; text-align: left; margin: 16px 0;"><thead><tr>${headerHtml}</tr></thead><tbody>${rowsHtml}</tbody></table></div>`;
+    }
     return `<p>${formattedText}</p>`;
   }).join('\n');
   const relatedService = servicesData.find((service) => service.slug === article.relatedServiceSlug);
