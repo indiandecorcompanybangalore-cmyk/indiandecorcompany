@@ -158,8 +158,8 @@ export const HomePage = () => {
       )}
 
       <MetaTags
-        title="Interior Designers in Bangalore | Indian Decor Company"
-        description="Explore Indian Decor Company's residential and commercial interior design services in Bangalore. View projects, compare service scopes and plan your budget."
+        title="Interior Design & Home Decor Company in Bangalore | IDC"
+        description="Looking for a trusted interior decor company in Bangalore? Turnkey home & office interiors, modular kitchens, custom furniture & transparent pricing. Call IDC."
         canonical="https://indiandecorcompany.in/"
       />
       <SchemaJsonLd type="Organization" />

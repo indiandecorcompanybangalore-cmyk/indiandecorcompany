@@ -36,8 +36,8 @@ const routes = [];
 routes.push({
   path: '/',
   canonical: 'https://indiandecorcompany.in/',
-  title: 'Interior Designers in Bangalore | Indian Decor Company',
-  description: "Explore Indian Decor Company’s residential and commercial interior design services in Bangalore. View projects, compare service scopes and plan your budget.",
+  title: 'Interior Design & Home Decor Company in Bangalore | IDC',
+  description: "Looking for a trusted interior decor company in Bangalore? Turnkey home & office interiors, modular kitchens, custom furniture & transparent pricing. Call IDC.",
   image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85',
   h1: 'Interior Designers in Bangalore for Homes & Workspaces',
   html: `
@@ -361,8 +361,8 @@ for (const service of servicesData) {
   routes.push({
     path: `/services/${service.slug}`,
     canonical: `https://indiandecorcompany.in/services/${service.slug}/`,
-    title: `${service.title} in Bangalore | IDC Interiors`,
-    description: serviceDescription,
+    title: service.metaTitle || `${service.title} in Bangalore | IDC Interiors`,
+    description: service.metaDescription || serviceDescription,
     image: service.heroImage,
     h1: `${service.title} in Bangalore`,
     schemas: [serviceSchema, breadcrumbsSchema],

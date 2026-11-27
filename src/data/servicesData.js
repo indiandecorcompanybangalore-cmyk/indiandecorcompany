@@ -2,6 +2,8 @@ export const servicesData = [
   {
     id: "modular-kitchen",
     slug: "modular-kitchen",
+    metaTitle: "Modular Kitchen Manufacturers in Bangalore | Direct Factory IDC",
+    metaDescription: "Custom modular kitchens in Bangalore manufactured with IS:710 marine plywood, Blum soft-close hardware & acrylic finishes. Factory-direct pricing from IDC.",
     title: "Modular Kitchens",
     shortDesc: "Custom modular kitchen design and manufacturing in Bangalore with marine-grade ply, Blum hardware, acrylic finishes, and 10-year warranty.",
     heroImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=85",
@@ -40,6 +42,8 @@ export const servicesData = [
   {
     id: "luxury-villa-interiors",
     slug: "luxury-villa-interiors",
+    metaTitle: "Luxury Villa Interior Designers in Bangalore | Turnkey IDC",
+    metaDescription: "Luxury villa interior designers in Bangalore for duplexes & gated communities in Whitefield, Sarjapur & North Bangalore. Architectural turnkey fitouts.",
     title: "Luxury Villa Interiors",
     shortDesc: "Turnkey luxury villa interior designers in Bangalore for duplexes and gated communities in Whitefield, Sarjapur, Yelahanka, and North Bangalore.",
     heroImage: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85",
@@ -78,6 +82,8 @@ export const servicesData = [
   {
     id: "home-renovation",
     slug: "home-renovation",
+    metaTitle: "Home Renovation & Flat Remodeling Contractors Bangalore | IDC",
+    metaDescription: "Complete home renovation & flat remodeling in Bangalore. Civil changes, bathroom upgrades, modular retrofits & turnkey project management. Consult IDC.",
     title: "Home Renovation & Remodeling",
     shortDesc: "Complete home renovation and flat remodeling in Bangalore. Civil changes, bathroom overhauls, modular upgrades, and turnkey interior retrofits.",
     heroImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85",
@@ -116,6 +122,8 @@ export const servicesData = [
   {
     id: "wardrobe-design",
     slug: "wardrobe-design",
+    metaTitle: "Custom Wardrobe Manufacturers in Bangalore | Sliding & Walk-In",
+    metaDescription: "Custom sliding wardrobes, walk-in closets & lacquered glass wardrobes in Bangalore. Factory-direct marine ply, German hardware & modular storage by IDC.",
     title: "Custom Wardrobes & Storage",
     shortDesc: "Custom sliding wardrobes, walk-in closets, and lacquered glass wardrobes in Bangalore manufactured with factory-direct marine ply and German hardware.",
     heroImage: "https://images.unsplash.com/photo-1558997519-83ea9252def8?auto=format&fit=crop&w=1400&q=85",
@@ -155,6 +163,8 @@ export const servicesData = [
   {
     id: "residential-interiors",
     slug: "residential-interiors",
+    metaTitle: "Residential Interior Designers in Bangalore | Homes & Villas IDC",
+    metaDescription: "Turnkey residential interior designers in Bangalore. Modular kitchens, bespoke wardrobes, false ceilings & 3D space planning for flats & villas. Enquire with IDC.",
     title: "Residential Interiors",
     shortDesc: "Explore residential interior design in Bangalore for apartments, villas and homes. Review design, storage and turnkey options, then discuss your project scope.",
     heroImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85",
@@ -193,6 +203,8 @@ export const servicesData = [
   {
     id: "commercial-interiors",
     slug: "commercial-interiors",
+    metaTitle: "Commercial Interior Designers & Fitouts in Bangalore | IDC",
+    metaDescription: "Turnkey commercial interior designers in Bangalore. Retail showrooms, restaurants, tech cafes & commercial fitouts with BOQ transparency. Consult IDC today.",
     title: "Commercial Spaces",
     shortDesc: "Brand-aligned commercial interior architecture for retail stores, corporate spaces, and customer-facing environments.",
     heroImage: "https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&w=1400&q=85",
@@ -227,6 +239,8 @@ export const servicesData = [
   {
     id: "office-interiors",
     slug: "office-interiors",
+    metaTitle: "Office & Corporate Interior Designers Bangalore | IDC",
+    metaDescription: "Corporate office interior design in Bangalore: Ergonomic workspaces, acoustic conference rooms & turnkey office fitouts with fast-track handover. Contact IDC.",
     title: "Office Interiors",
     shortDesc: "Modern, ergonomic, and technology-integrated workplace interior design for offices and collaborative workspaces.",
     heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85",
@@ -261,6 +275,8 @@ export const servicesData = [
   {
     id: "retail-interiors",
     slug: "retail-interiors",
+    metaTitle: "Retail Showroom & Restaurant Interior Designers Bangalore | IDC",
+    metaDescription: "Bespoke interior design for retail showrooms, restaurants, cafes & boutique spaces in Bangalore. Customer-centric space planning & fast-track fitouts.",
     title: "Retail & Hospitality",
     shortDesc: "Interior design for restaurants, cafes, boutique showrooms, and retail spaces, shaped around the brief and customer experience.",
     heroImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85",
@@ -291,6 +307,8 @@ export const servicesData = [
   {
     id: "modular-furniture",
     slug: "modular-furniture",
+    metaTitle: "Modular Furniture Manufacturers in Bangalore | Turnkey IDC",
+    metaDescription: "Factory-direct modular furniture in Bangalore: Precision-crafted modular kitchens, wardrobes, TV entertainment consoles & vanity units built to order.",
     title: "Modular Furniture",
     shortDesc: "Modular kitchens, sliding wardrobes, TV consoles, and vanity storage planned for individual homes and layouts.",
     heroImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=85",
@@ -321,6 +339,8 @@ export const servicesData = [
   {
     id: "false-ceiling",
     slug: "false-ceiling",
+    metaTitle: "False Ceiling & Architectural Lighting in Bangalore | IDC",
+    metaDescription: "Architectural gypsum false ceilings, perimeter cove lighting & magnetic track profiles in Bangalore. Clean drop-height planning & turnkey installation.",
     title: "False Ceiling & Lighting",
     shortDesc: "Architectural gypsum and wooden-raft false ceilings with integrated cove lighting, magnetic tracks, and linear diffusers.",
     heroImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=85",
@@ -351,6 +371,8 @@ export const servicesData = [
   {
     id: "wall-decor-panels",
     slug: "wall-decor-panels",
+    metaTitle: "Acoustic Wall Panels & Fluted Wood Decor Bangalore | IDC",
+    metaDescription: "Architectural acoustic fluted panels, marble feature walls & PU moulding in Bangalore. Premium wall styling for luxury living rooms & corporate suites.",
     title: "Wall Décor & Panels",
     shortDesc: "Acoustic fluted panels, marble feature walls, PU moulding, and architectural stone veneers for interior spaces.",
     heroImage: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=85",
@@ -381,6 +403,8 @@ export const servicesData = [
   {
     id: "custom-furniture",
     slug: "custom-furniture",
+    metaTitle: "Custom Furniture in Bangalore | Handcrafted Bespoke IDC",
+    metaDescription: "Custom furniture in Bangalore: Handcrafted sofas, solid wood dining sets, acoustic credenzas & bespoke cabinetry tailored to your home layout. Explore IDC.",
     title: "Custom Furniture Solutions",
     shortDesc: "Bespoke sofas, dining tables, lounge armchairs, and credenzas planned to suit the room and project brief.",
     heroImage: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=85",
@@ -411,6 +435,8 @@ export const servicesData = [
   {
     id: "turnkey-interior-solutions",
     slug: "turnkey-interior-solutions",
+    metaTitle: "Turnkey Interior Fitout Contractors in Bangalore | IDC",
+    metaDescription: "End-to-end turnkey interior contractors in Bangalore. Single-point coordination from civil work & electrical to modular cabinetry & final styling. Call IDC.",
     title: "Turnkey Interior Projects",
     shortDesc: "Turnkey interior project coordination from civil modifications and cabinetry through finishing and handover.",
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85",

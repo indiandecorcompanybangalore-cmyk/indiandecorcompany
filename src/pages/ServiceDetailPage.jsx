@@ -21,8 +21,8 @@ export const ServiceDetailPage = () => {
   return (
     <div style={{ minHeight: '100vh', overflowX: 'hidden' }}>
       <MetaTags
-        title={`${service.title} in Bangalore | IDC Interiors`}
-        description={service.shortDesc || service.overview}
+        title={service.metaTitle || `${service.title} in Bangalore | IDC Interiors`}
+        description={service.metaDescription || service.shortDesc || service.overview}
         canonical={`https://indiandecorcompany.in/services/${service.slug}`}
         ogImage={service.heroImage}
       />
