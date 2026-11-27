@@ -228,8 +228,8 @@ routes.push({
 routes.push({
   path: '/furniture-manufacturer',
   canonical: 'https://indiandecorcompany.in/furniture-manufacturer/',
-  title: 'Custom Furniture Manufacturer in Bangalore | IDC',
-  description: 'Indian Decor Company offers custom furniture and modular cabinetry for residential and commercial interior projects in Bangalore.',
+  title: 'Custom Furniture Manufacturer in Bangalore | Direct Factory IDC',
+  description: 'Looking for a custom furniture manufacturer in Bangalore? Factory-direct bespoke sofas, solid wood dining tables, wardrobes & cabinetry. Get a factory quote.',
   image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=85',
   h1: 'Custom Furniture Manufacturing in Bangalore',
   schemas: [makeCoreBreadcrumb('Furniture Manufacturing', 'furniture-manufacturer')],
